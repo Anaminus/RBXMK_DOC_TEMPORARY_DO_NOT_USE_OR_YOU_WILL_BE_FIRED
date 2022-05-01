@@ -1,0 +1,3 @@
+[submodule "themes/shadocs"]
+	path = themes/shadocs
+	url = https://github.com/anaminus/shadocs.git
