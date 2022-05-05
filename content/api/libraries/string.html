@@ -1,0 +1,32 @@
++++
+weight = 110
+title = "string"
++++
+
+<p>The <b>string</b> library is an extension to the standard library that
+includes the same additions to <a href="https://developer.roblox.com/en-us/api-reference/lua-docs/string">Roblox&#39;s
+string library</a>:</p>
+
+<p>$FIELDS</p>
+<table>
+<thead>
+<tr><th>Item</th><th>Kind</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>split</td><td>Function</td><td><p>Splits a string into a list of substrings.</p>
+</td></tr>
+</tbody>
+</table>
+<h2>Functions</h2>
+<h3>split</h3>
+<code>string.split(s: string, sep: string? = ","): {string}</code>
+<p>The <b>split</b> function splits <i>s</i> into substrings separated by
+<i>sep</i>.</p>
+
+<p>If <i>sep</i> is nil, or if <i>sep</i> is not nil but not in <i>s</i>, then
+split returns a table with <i>s</i> as its only element.</p>
+
+<p>If <i>sep</i> is empty, then <i>s</i> is split after each UTF-8 sequence.</p>
+
+<p><b>Note</b>: Roblox&#39;s implementation splits per byte, while this
+implementation splits per UTF-8 character.</p>

@@ -1,0 +1,44 @@
++++
+weight = 110
+title = "math"
++++
+
+<p>The <b>math</b> library is an extension to the standard library that includes
+the same additions to <a href="https://developer.roblox.com/en-us/api-reference/lua-docs/math">Roblox&#39;s
+math library</a>:</p>
+
+<p>$FIELDS</p>
+<table>
+<thead>
+<tr><th>Item</th><th>Kind</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>clamp</td><td>Function</td><td><p>Returns a number clamped between a minimum and maximum.</p>
+</td></tr>
+<tr><td>log</td><td>Function</td><td><p>Includes optional base argument.</p>
+</td></tr>
+<tr><td>round</td><td>Function</td><td><p>Rounds a number to the nearest integer.</p>
+</td></tr>
+<tr><td>sign</td><td>Function</td><td><p>Returns the sign of a number.</p>
+</td></tr>
+</tbody>
+</table>
+<h2>Functions</h2>
+<h3>clamp</h3>
+<code>math.clamp(x: number, min: number, max: number): number</code>
+<p>The <b>clamp</b> function returns <i>x</i> clamped so that it is not less
+than <i>min</i> or greater than <i>max</i>.</p>
+<h3>log</h3>
+<code>math.log(x: number, base: number? = 𝑒): number</code>
+<p>The <b>log</b> function returns the logarithm of <i>x</i> in <i>base</i>. The
+default for <i>base</i> is <code>e</code>, returning the natural logarithm of
+<i>x</i>.</p>
+<h3>round</h3>
+<code>math.round(x: number): number</code>
+<p>The <b>round</b> function returns <i>x</i> rounded to the nearest integer.
+The function rounds half away from zero.</p>
+<h3>sign</h3>
+<code>math.sign(x: number): number</code>
+<p>The <b>sign</b> function returns the sign of <i>x</i>: <code>1</code> if
+<i>x</i> is greater than zero, <code>-1</code> of <i>x</i> is less than zero,
+and <code>0</code> if <i>x</i> equals zero.</p>

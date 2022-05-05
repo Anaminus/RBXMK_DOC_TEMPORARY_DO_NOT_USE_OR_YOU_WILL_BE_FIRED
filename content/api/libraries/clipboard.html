@@ -1,0 +1,53 @@
++++
+weight = 110
+title = "clipboard"
++++
+
+<p>The <b>clipboard</b> library provides an interface to the operating system&#39;s
+clipboard.</p>
+
+<p>$FIELDS</p>
+
+<p><b>The clipboard is currently available only on Windows. Other operating
+systems return no data.</b></p>
+<table>
+<thead>
+<tr><th>Item</th><th>Kind</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>read</td><td>Function</td><td><p>Gets data from the clipboard in one of a number of formats.</p>
+</td></tr>
+<tr><td>write</td><td>Function</td><td><p>Sets data to the clipboard in a number of formats.</p>
+</td></tr>
+</tbody>
+</table>
+<h2>Functions</h2>
+<h3>read</h3>
+<code>clipboard.read(...: string): (value: any?)</code>
+<p>The <b>read</b> function gets a value from the clipboard according to one of
+the given <a href="frag:formats">formats</a>.</p>
+
+<p>Each format has a number of associated <a href="https://en.wikipedia.org/wiki/Media_type">media types</a>. Each format is
+traversed in order, and each media type within a format is traversed in order.
+The data that matches the first media type found in the clipboard is selected.
+This data is decoded by the format corresponding to the matched media type, and
+the result is returned.</p>
+
+<p>Throws an error if <i>value</i> could not be decoded from the format, or if
+data could not be retrieved from the clipboard. If no data was found, then nil
+is returned.</p>
+<h3>write</h3>
+<code>clipboard.write(value: any, ...: string)</code>
+<p>The <b>write</b> function sets <i>value</i> to the clipboard according to the
+given <a href="frag:formats">formats</a>.</p>
+
+<p>Each format has a number of associated <a href="https://en.wikipedia.org/wiki/Media_type">media types</a>. For each
+format, the data is encoded in the format, which is then sent to the clipboard
+for each of the format&#39;s media type. Data is not sent for a media type if that
+media type was already sent.</p>
+
+<p>If no formats are given, then the clipboard is cleared with no further
+action.</p>
+
+<p>Throws an error if <i>value</i> could not be encoded in a format, or if data
+could not be sent to the clipboard.</p>

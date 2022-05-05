@@ -1,0 +1,141 @@
++++
+weight = 110
+title = "fs"
++++
+
+<p>The <b>fs</b> library provides an interface to the file system.</p>
+
+<p>$FIELDS</p>
+<table>
+<thead>
+<tr><th>Item</th><th>Kind</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>dir</td><td>Function</td><td><p>Gets a list of files in a directory.</p>
+</td></tr>
+<tr><td>mkdir</td><td>Function</td><td><p>Makes a new directory.</p>
+</td></tr>
+<tr><td>read</td><td>Function</td><td><p>Reads data from a file in a certain format.</p>
+</td></tr>
+<tr><td>remove</td><td>Function</td><td><p>Removes a file or directory.</p>
+</td></tr>
+<tr><td>rename</td><td>Function</td><td><p>Moves a file or directory.</p>
+</td></tr>
+<tr><td>stat</td><td>Function</td><td><p>Gets metadata about a file.</p>
+</td></tr>
+<tr><td>write</td><td>Function</td><td><p>Writes data to a file in a certain format.</p>
+</td></tr>
+</tbody>
+</table>
+<h2>Functions</h2>
+<h3>dir</h3>
+<code>fs.dir(path: string): {DirEntry}?</code>
+<p>The <b>dir</b> function returns a list of files in the given directory. Each
+file is a table with the following fields:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td>The base name of the file.</td>
+</tr>
+<tr>
+<td>IsDir</td>
+<td>boolean</td>
+<td>Whether the file is a directory.</td>
+</tr>
+</tbody>
+</table>
+
+<p>dir returns nil if the directory does not exist. An error is thrown if a
+problem otherwise occurred while reading the directory.</p>
+<h3>mkdir</h3>
+<code>fs.mkdir(path: string, all: bool?): bool</code>
+<p>The <b>mkdir</b> function creates a directory at <i>path</i>. If <i>all</i>
+is true, then mkdir will create each parent directory as needed. <i>all</i>
+defaults to false.</p>
+
+<p>Returns true if all the directories were created successfully. Returns false
+if all of the directories already exist. Throws an error if a problem otherwise
+occurred while creating a directory.</p>
+<h3>read</h3>
+<code>fs.read(path: string, format: FormatSelector?): (value: any)</code>
+<p>The <b>read</b> function reads the content of the file at <i>path</i>, and
+decodes it into <i>value</i> according to the <a href="frag:formats">format</a>
+matching the file extension of <i>path</i>. If <i>format</i> is given, then it
+will be used instead of the file extension.</p>
+
+<p>If the format returns an <a href="type:Instance">Instance</a>, then the Name property will be
+set to the &#34;fstem&#34; component of <i>path</i> according to <a href="api:path.split">path.split</a>.</p>
+<h3>remove</h3>
+<code>fs.remove(path: string, all: bool?): bool</code>
+<p>The <b>remove</b> function removes the file or directory at <i>path</i>. If
+<i>all</i> is true, then removing a directory will also recursively remove all
+of its children. <i>all</i> defaults to false.</p>
+
+<p>Returns true if every file is removed successfully. Returns false if the file
+or directory does not exist. Throws an error if a problem occurred while
+removing a file.</p>
+<h3>rename</h3>
+<code>fs.rename(old: string, new: string): bool</code>
+<p>The <b>rename</b> functions moves the file or directory at path <i>old</i> to
+path <i>new</i>. If <i>new</i> exists and is not a directory, it is
+replaced.</p>
+
+<p>Returns true if the file was moved successfully. Returns false if the file or
+directory does not exist. Throws an error if a problem otherwise occurred while
+moving the file.</p>
+<h3>stat</h3>
+<code>fs.stat(path: string): FileInfo?</code>
+<p>The <b>stat</b> function gets metadata of the given file. Returns a table
+with the following fields:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td>The base name of the file.</td>
+</tr>
+<tr>
+<td>IsDir</td>
+<td>boolean</td>
+<td>Whether the file is a directory.</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>number</td>
+<td>The size of the file, in bytes.</td>
+</tr>
+<tr>
+<td>ModTime</td>
+<td>number</td>
+<td>The modification time of the file, in Unix time.</td>
+</tr>
+</tbody>
+</table>
+
+<p>stats returns nil if the file does not exist. An error will be thrown if a
+problem otherwise occurred while getting the metadata.</p>
+
+<p>stat does not follow symbolic links.</p>
+<h3>write</h3>
+<code>fs.write(path: string, value: any, format: FormatSelector?)</code>
+<p>The <b>write</b> function encodes <i>value</i> according to the <a href="frag:formats">format</a> matching the file extension of <i>path</i>, and
+writes the result to the file at <i>path</i>. If <i>format</i> is given, then it
+will be used instead of the file extension.</p>
