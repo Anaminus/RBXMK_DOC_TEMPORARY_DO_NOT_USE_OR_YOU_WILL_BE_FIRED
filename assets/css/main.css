@@ -60,3 +60,16 @@
 .api-list table td:first-child {
 	word-break: normal;
 }
+.showcase .columns {
+	margin: 9em 0;
+}
+.hero.is-cli {
+	background-color: #363636;
+	color: #fff;
+}
+.hero.is-cli .title {
+	color: #fff;
+}
+.hero.is-cli .subtitle {
+	color: #fff;
+}
