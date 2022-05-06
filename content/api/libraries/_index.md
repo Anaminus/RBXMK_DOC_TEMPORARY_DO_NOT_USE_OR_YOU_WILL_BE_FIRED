@@ -14,23 +14,23 @@ already exist. Libraries are loaded in ascending order by their priority value.
 
 The following libraries are available:
 
-Library                                | Priority | Description
----------------------------------------|---------:|------------
-[base](api/libraries/base)             | -1       | The Lua 5.1 standard library, abridged.
-[program](api/libraries/program)       | 0        | Values related to the running program.
-[rbxmk](api/libraries/rbxmk)           | 1        | An interface to the rbxmk engine, and the rbxmk environment.
-[roblox](api/libraries/roblox)         | 2        | An environment emulating the Roblox Lua API.
-[clipboard](api/libraries/clipboard)   | 10       | An interface to the clipboard.
-[fs](api/libraries/fs)                 | 10       | An interface to the file system.
-[http](api/libraries/http)             | 10       | An interface to network resources.
-[math](api/libraries/math)             | 10       | Extensions to the standard math library.
-[os](api/libraries/os)                 | 10       | Extensions to the standard os library.
-[path](api/libraries/path)             | 10       | File path manipulation.
-[rbxassetid](api/libraries/rbxassetid) | 10       | An interface to Roblox assets.
-[string](api/libraries/string)         | 10       | Extensions to the standard string library.
-[sym](api/libraries/sym)               | 10       | Symbols for accessing instance metadata.
-[table](api/libraries/table)           | 10       | Extensions to the standard table library.
-[types](api/libraries/types)           | 10       | Fallbacks for constructing certain types.
+Library                                | Description
+---------------------------------------|------------
+[base](api/libraries/base)             | The Lua 5.1 standard library, abridged.
+[program](api/libraries/program)       | Values related to the running program.
+[rbxmk](api/libraries/rbxmk)           | An interface to the rbxmk engine, and the rbxmk environment.
+[roblox](api/libraries/roblox)         | An environment emulating the Roblox Lua API.
+[clipboard](api/libraries/clipboard)   | An interface to the clipboard.
+[fs](api/libraries/fs)                 | An interface to the file system.
+[http](api/libraries/http)             | An interface to network resources.
+[math](api/libraries/math)             | Extensions to the standard math library.
+[os](api/libraries/os)                 | Extensions to the standard os library.
+[path](api/libraries/path)             | File path manipulation.
+[rbxassetid](api/libraries/rbxassetid) | An interface to Roblox assets.
+[string](api/libraries/string)         | Extensions to the standard string library.
+[sym](api/libraries/sym)               | Symbols for accessing instance metadata.
+[table](api/libraries/table)           | Extensions to the standard table library.
+[types](api/libraries/types)           | Fallbacks for constructing certain types.
 
 # Filtering
 The [run](command/run) and [interactive](command/interactice) commands have a
