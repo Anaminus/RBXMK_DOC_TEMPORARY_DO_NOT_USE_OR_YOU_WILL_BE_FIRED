@@ -57,8 +57,8 @@ If rbxmk was installed correctly, running this command will print the installed
 version of rbxmk. For example, the latest version is **0.9.1**.
 
 ## 4) Find a suitable place to work
-Direct the terminal to work in a new folder created on the desktop using the
-terminal's `mkdir` and `cd`. Type the following commands:
+Direct the terminal to work in a new folder created on the desktop with the
+terminal's `mkdir` and `cd` commands:
 
 ```batch
 mkdir %USERPROFILE%\Desktop\ExampleProject
