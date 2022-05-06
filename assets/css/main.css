@@ -77,3 +77,6 @@ table:not([style]) th {
 .typedef {
 	padding: 0;
 }
+.api-list table td:first-child {
+	word-break: normal;
+}

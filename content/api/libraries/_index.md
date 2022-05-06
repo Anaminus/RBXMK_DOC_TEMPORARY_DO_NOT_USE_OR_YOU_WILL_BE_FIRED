@@ -14,6 +14,8 @@ already exist. Libraries are loaded in ascending order by their priority value.
 
 The following libraries are available:
 
+<div class="api-list">
+
 Library                                | Description
 ---------------------------------------|------------
 [base](api/libraries/base)             | The Lua 5.1 standard library, abridged.
@@ -31,6 +33,8 @@ Library                                | Description
 [sym](api/libraries/sym)               | Symbols for accessing instance metadata.
 [table](api/libraries/table)           | Extensions to the standard table library.
 [types](api/libraries/types)           | Fallbacks for constructing certain types.
+
+</div>
 
 # Filtering
 The [run](command/run) and [interactive](command/interactice) commands have a
