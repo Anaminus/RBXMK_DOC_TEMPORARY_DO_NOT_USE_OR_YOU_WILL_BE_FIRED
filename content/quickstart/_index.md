@@ -5,21 +5,24 @@ description = "Getting started with rbxmk."
 titleIcon = "fas fa-power-off"
 +++
 
-<p class="is-size-4 has-text-centered is-italic">Give a classic place a fresh look.</p>
 
 This page provides steps for quickly getting started with rbxmk.
 
 {{<alert type="info">}}
 
-This quick start assumes Windows for its examples. See the
-[Installation](installation) page for instructions on how to install rbxmk for
-other operating systems.
+Used to Remodel? check out the [comparison guide](overview/remodel).
 
 {{</alert>}}
 
 # Steps
+<p class="is-size-4 is-italic">Give a classic place a fresh look.</p>
+
+These steps uses Windows for their examples. See the
+[Installation](installation) page for instructions on how to install rbxmk for
+other operating systems.
+
 ## 1) Install rbxmk
-Download the [Windows installer][installer], then open it and follow the
+Download the [latest Windows installer][installer], then open it and follow the
 prompts. This will install rbxmk to your computer, and make it possible to run
 from a terminal.
 
