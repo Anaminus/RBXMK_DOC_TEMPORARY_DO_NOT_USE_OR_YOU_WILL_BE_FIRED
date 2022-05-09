@@ -8,7 +8,7 @@ Certain symbol fields on [Instances][Instance] have an inheritance behavior.
 Member                                    | Principal type           | Raw member                                      | Global field
 ------------------------------------------|--------------------------|-------------------------------------------------|-------------
 [sym.AttrConfig][Instance.sym.AttrConfig] | [AttrConfig][AttrConfig] | [sym.RawAttrConfig][Instance.sym.RawAttrConfig] | [rbxmk.globalAttrConfig][rbxmk.globalAttrConfig]
-[sym.Desc][Instance.sym.Desc]             | [RootDesc][RootDesc]     | [sym.RawDesc][Instance.sym.RawDesc]             | [rbxmk.globalDesc][rbxmk.globalDesc]
+[sym.Desc][Instance.sym.Desc]             | [Desc][Desc]             | [sym.RawDesc][Instance.sym.RawDesc]             | [rbxmk.globalDesc][rbxmk.globalDesc]
 
 The following sections describe the aspects of this behavior for each member.
 

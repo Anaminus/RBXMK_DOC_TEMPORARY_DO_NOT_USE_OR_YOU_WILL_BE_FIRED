@@ -51,6 +51,7 @@ description = "Type reference."
 - [ClassDesc](api/types/ClassDesc)
 - [Cookie](api/types/Cookie)
 - [Cookies](api/types/Cookies)
+- [Desc](api/types/Desc)
 - [DescAction](api/types/DescAction)
 - [DescActions](api/types/DescActions)
 - [DescFields](api/types/DescFields)
@@ -67,7 +68,6 @@ description = "Type reference."
 - [ParameterDesc](api/types/ParameterDesc)
 - [PropertyDesc](api/types/PropertyDesc)
 - [RBXAssetOptions](api/types/RBXAssetOptions)
-- [RootDesc](api/types/RootDesc)
 - [Symbol](api/types/Symbol)
 - [TypeDesc](api/types/TypeDesc)
 
