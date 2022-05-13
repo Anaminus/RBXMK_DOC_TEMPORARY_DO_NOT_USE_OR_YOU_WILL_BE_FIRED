@@ -37,7 +37,7 @@ local url = clipboard.read("txt")
 local id = tonumber(url:match("%d+"))
 if id then
 	local asset = rbxassetid.read({
-		AssetID = id,
+		AssetId = id,
 		Format = "rbxm",
 	})
 	clipboard.write(asset, "rbxm")
