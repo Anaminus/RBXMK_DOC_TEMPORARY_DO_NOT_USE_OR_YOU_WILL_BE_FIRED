@@ -7,9 +7,11 @@ titleIcon = "fas fa-list"
 
 <p style="text-align:right"><i>API: Application Programming Interface</i></p>
 
-[Lua](https://lua.org/) scripts are used to perform actions in rbxmk. The API
-for Lua is designed to closely resemble Roblox's Lua API. The current Lua
-implementation is based on 5.1.
+[Lua](https://lua.org/) scripts are used to perform actions in rbxmk. By
+convention only, scripts run with rbxmk have the `.rbxmk.lua` extension.
+
+The Lua API for rbxmk is designed to closely resemble Roblox's Lua API. The
+current Lua implementation is based on 5.1.
 
 The API can be divided into the following categories:
 
