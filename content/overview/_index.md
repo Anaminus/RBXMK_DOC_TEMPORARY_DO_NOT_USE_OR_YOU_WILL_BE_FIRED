@@ -90,7 +90,7 @@ Sub-projects for integrating rbxmk into your DevOps workflow are available:
 
 [Automation <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](overview/automation)
 
-# Similar projects
+# Related projects
 
 - [Rojo](https://rojo.space/): Syncing between Roblox Studio and the file system.
 	- The [rojo.rbxmk.lua]() script can be used to build Rojo projects with
