@@ -152,8 +152,8 @@ downloaded place, but has the old tower model replaced with the downloaded tower
 model.
 
 # Going forward
-The [Overview](overview) page provides information on various concepts related
-to rbxmk.
+The [Overview](overview) page provides an overview of the rbxmk project and
+related concepts.
 
 The [Command reference](command) pages provide information about the rbxmk
 executable, and the commands that can be run.
