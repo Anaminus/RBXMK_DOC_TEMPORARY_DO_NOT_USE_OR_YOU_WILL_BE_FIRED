@@ -19,11 +19,11 @@ information manually; the API is slightly off from that of Roblox, therefore
 being less familiar. It would be great if this type information could be defined
 and enforced automatically.</p><p>The solution to this is <strong>descriptors</strong>. A descriptor contains information about
 what classes exist, the properties that exist on each class, what enums are
-defined, and so on.</p><p>The primary descriptor type is the [<strong>RootDesc</strong>][RootDesc]. This contains a
-complete description of the classes and enums of an entire API.</p><p>An [Instance][Instance] can have a RootDesc assigned to it. This state is
-inherited by any descendant instances. See [sym.Desc][Instance.sym.Desc] for
-more information.</p><p>Additionally, the [rbxmk.globalDesc][rbxmk.globalDesc] field may be used to
-apply a RootDesc globally. When globalDesc is set, any instance that wouldn&rsquo;t
+defined, and so on.</p><p>The primary descriptor type is the [<strong>Desc</strong>][Desc]. This contains a complete
+description of the classes and enums of an entire API.</p><p>An [Instance][Instance] can have a Desc assigned to it. This state is inherited
+by any descendant instances. See [sym.Desc][Instance.sym.Desc] for more
+information.</p><p>Additionally, the [rbxmk.globalDesc][rbxmk.globalDesc] field may be used to
+apply a Desc globally. When globalDesc is set, any instance that wouldn&rsquo;t
 otherwise inherit a descriptor will use this global descriptor.</p><p>When an instance has a descriptor, several behaviors are enforced:</p><ul><li>When the global descriptor is set,
 <a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-instancenew class=is-pretty-link>Instance.new</a> errors if the given class
 name does not exist (Instance.new can also receive a descriptor).</li><li>A property will throw an error if it does not exist for the class.</li><li>Getting an uninitialized property will throw an error.</li><li>Getting a property that currently has an incorrect type will throw an error.</li><li>Setting a property to a value of the incorrect type will throw an error.</li><li>A property of the &ldquo;Class&rdquo; type category will throw an error if the assigned
@@ -31,15 +31,14 @@ value is not an instance of the expected class.</li><li>The value assigned to a 
 into a token. The value can be an enum item of the expected enum, or a number
 or string of the correct value.</li><li>The class of an instance created from
 <a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-datamodelgetservice class=is-pretty-link>DataModel.GetService</a> must have
-the &ldquo;Service&rdquo; tag.</li></ul><p>A RootDesc has methods to get and set information on the fly. Descriptors for a
+the &ldquo;Service&rdquo; tag.</li></ul><p>A Desc has methods to get and set information on the fly. Descriptors for a
 particular API element are represented by a dictionary that contains the fields
-of the element. The following types are related:</p><table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>[CallbackDesc][CallbackDesc]</td><td>Describes a callback class member.</td></tr><tr><td>[ClassDesc][ClassDesc]</td><td>Describes a class.</td></tr><tr><td>[EnumDesc][EnumDesc]</td><td>Describes an enum.</td></tr><tr><td>[EnumItemDesc][EnumItemDesc]</td><td>Describes an enum item.</td></tr><tr><td>[EventDesc][EventDesc]</td><td>Describes an event class member.</td></tr><tr><td>[FunctionDesc][FunctionDesc]</td><td>Describes a function class member.</td></tr><tr><td>[MemberDesc][MemberDesc]</td><td>A sum of the defined member types.</td></tr><tr><td>[ParameterDesc][ParameterDesc]</td><td>Describes a parameter of a function, event, or callback.</td></tr><tr><td>[PropertyDesc][PropertyDesc]</td><td>Describes a property class member.</td></tr><tr><td>[RootDesc][RootDesc]</td><td>Describes an entire API.</td></tr><tr><td>[TypeDesc][TypeDesc]</td><td>Describes the type of a value.</td></tr></tbody></table><h1 id=diffing-and-patching>Diffing and Patching
+of the element. The following types are related:</p><table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>[CallbackDesc][CallbackDesc]</td><td>Describes a callback class member.</td></tr><tr><td>[ClassDesc][ClassDesc]</td><td>Describes a class.</td></tr><tr><td>[Desc][Desc]</td><td>Describes an entire API.</td></tr><tr><td>[EnumDesc][EnumDesc]</td><td>Describes an enum.</td></tr><tr><td>[EnumItemDesc][EnumItemDesc]</td><td>Describes an enum item.</td></tr><tr><td>[EventDesc][EventDesc]</td><td>Describes an event class member.</td></tr><tr><td>[FunctionDesc][FunctionDesc]</td><td>Describes a function class member.</td></tr><tr><td>[MemberDesc][MemberDesc]</td><td>A sum of the defined member types.</td></tr><tr><td>[ParameterDesc][ParameterDesc]</td><td>Describes a parameter of a function, event, or callback.</td></tr><tr><td>[PropertyDesc][PropertyDesc]</td><td>Describes a property class member.</td></tr><tr><td>[TypeDesc][TypeDesc]</td><td>Describes the type of a value.</td></tr></tbody></table><h1 id=diffing-and-patching>Diffing and Patching
 <a href=#diffing-and-patching class=anchor>#</a></h1><p>Descriptors can be compared and patched with the
-<a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-rootdescdiff class=is-pretty-link>RootDesc.Diff</a> and
-<a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-rootdescpatch class=is-pretty-link>RootDesc.Patch</a> methods. Diff returns a
-list of
-<a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-descaction class=is-pretty-link><strong>DescActions</strong></a>, which describe how
-to transform the first descriptor into the second. Patch can used to apply this
+<a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-descdiff class=is-pretty-link>Desc.Diff</a> and
+<a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-descpatch class=is-pretty-link>Desc.Patch</a> methods. Diff returns a list of
+<a href=/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/types.md#user-content-descaction class=is-pretty-link><strong>DescActions</strong></a>, which describe how to
+transform the first descriptor into the second. Patch can used to apply this
 transformation.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- List differences.</span>
 </span></span><span class=line><span class=cl><span class=kd>local</span> <span class=n>diff</span> <span class=o>=</span> <span class=n>prevDesc</span><span class=p>:</span><span class=n>Diff</span><span class=p>(</span><span class=n>nextDesc</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=c1>-- Transform prev into next.</span>
