@@ -5,6 +5,11 @@ description = "Overview of rbxmk."
 titleIcon = "fas fa-book"
 +++
 
+----
+
+<div class="columns">
+<div class="column">
+
 # What is Roblox?
 From the [Roblox website](https://corp.roblox.com/):
 
@@ -12,12 +17,20 @@ From the [Roblox website](https://corp.roblox.com/):
 > to imagine, create, and have fun with friends as they explore millions of
 > immersive 3D experiences, all built by a global community of developers.
 
+</div>
+<div class="column">
+
 # What is Lua?
 From the [Lua website](https://www.lua.org/about.html):
 
 > Lua is a powerful, efficient, lightweight, embeddable scripting language. It
 > supports procedural programming, object-oriented programming, functional
 > programming, data-driven programming, and data description.
+
+</div>
+</div>
+
+----
 
 # What is rbxmk?
 rbxmk is a command-line tool for processing data to aid with the game
