@@ -6,16 +6,13 @@ titleIcon = "fas fa-download"
 +++
 
 # Instructions
-{{<alert type="error">}}
-These instructions are a work in progress. Not all download options are available. Stay tuned!
-{{</alert>}}
-
 The current version of rbxmk is **<version>v0.9.1</version>**.
 
 Select the tab corresponding to your operating system:
 
 {{<snippet>}}
 {{<tab title="Windows" type="md">}}
+{{<noimpl>}}
 
 *These are instructions for installing rbxmk on [Windows][windows].*
 
@@ -41,12 +38,14 @@ rbxmk version
 
 {{</tab>}}
 {{<tab title="Mac" type="md">}}
+{{<noimpl reason="\"portable\" qualifier">}}
+{{<noimpl reason="ARM architecture">}}
 
 *These are instructions for installing rbxmk on [macOS][macos].*
 
 Select the download that corresponds to your operating system's architecture:
 - [64-bit](https://github.com/Anaminus/rbxmk/releases/download/v0.9.1/rbxmk-v0.9.1-darwin-amd64-portable.zip)
-- [M1](https://github.com/Anaminus/rbxmk/releases/download/v0.9.1/rbxmk-v0.9.1-darwin-arm64-portable.zip)
+- [ARM](https://github.com/Anaminus/rbxmk/releases/download/v0.9.1/rbxmk-v0.9.1-darwin-arm64-portable.zip)
 
 The executable is contained in a zip archive. After extracting, the executable
 should be placed in a location that is in the system [PATH][PATH].
@@ -69,6 +68,7 @@ rbxmk version
 
 {{</tab>}}
 {{<tab title="Linux" type="md">}}
+{{<noimpl reason="\"portable\" qualifier">}}
 
 *These are instructions for installing rbxmk on [Linux][linux].*
 
@@ -93,6 +93,7 @@ rbxmk version
 
 {{</tab>}}
 {{<tab title="Linux Debian" type="md">}}
+{{<noimpl>}}
 
 *These are instructions for installing rbxmk on Linux for [Debian][debian]-based
 distributions.*
@@ -125,6 +126,7 @@ rbxmk version
 
 {{</tab>}}
 {{<tab title="Linux RPM" type="md">}}
+{{<noimpl>}}
 
 *These are instructions for installing rbxmk on Linux through the [RPM Package
 manager][rpm].*
@@ -169,6 +171,7 @@ data loss. Be sure to [report][issues] issues as you encounter them!
 {{</alert>}}
 
 # All downloads
+{{<noimpl reason="">}}
 <div class="flexzone">
 <div>
 
@@ -198,6 +201,7 @@ data loss. Be sure to [report][issues] issues as you encounter them!
 </div>
 </div>
 
+{{<noimpl>}}
 *[List of checksums][checksums]*
 
 rbxmk may also be compiled from source. See the [Compiling from

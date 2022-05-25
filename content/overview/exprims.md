@@ -1,6 +1,7 @@
 +++
 weight = 40
 title = "Explicit primitives"
+draft = true
 +++
 
 The properties of instances in Roblox have a number of different types. Many of

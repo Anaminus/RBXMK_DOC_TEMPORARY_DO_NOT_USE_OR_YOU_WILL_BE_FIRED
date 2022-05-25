@@ -22,6 +22,7 @@ These steps uses Windows for their examples. See the
 other operating systems.
 
 ## 1) Install rbxmk
+{{<noimpl>}}
 Download the [latest Windows installer][installer], then open it and follow the
 prompts. This will install rbxmk to your computer, and make it possible to run
 from a terminal.
@@ -48,6 +49,8 @@ It is recommended that you are familar with the [command-line interface][cli]
 [cli-video]: https://www.youtube.com/watch?v=mUXVBMhr7Xg
 
 {{</alert>}}
+
+If desired, your preferred terminal can be used instead.
 
 ## 3) Verify the installation
 In the terminal, type the following command:
@@ -91,6 +94,7 @@ The text `Hello, world!` will appear in the terminal.
 [run]: command/run
 
 ## 7) Download the latest descriptors
+{{<noimpl>}}
 Using the latest [Descriptors][descriptors] from Roblox will allow rbxmk to be
 used more easily.
 
@@ -117,6 +121,7 @@ Tower][tower] model.
 [tower]: https://www.roblox.com/library/185687363/Observation-Tower
 
 ## 9) Edit the script
+{{<noimpl reason="Pivot API">}}
 Use your preferred editor to edit `script.lua`. Write a script that adds the
 tower model to the place:
 

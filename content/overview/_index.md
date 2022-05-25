@@ -47,7 +47,7 @@ operating system under the sun provides one. In addition to enabling manual work
 and one-off snippets, this also makes rbxmk suitable for automated tasks, such
 as continuous integration and build automation.
 
-[Command reference <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](command)
+{{<goto page="/command">}}Command reference{{</goto>}}
 
 [cli]: https://en.wikipedia.org/wiki/Command-line_interface
 
@@ -55,7 +55,7 @@ as continuous integration and build automation.
 Most of rbxmk's behavior is facilitated through Lua scripts. Lua was chosen
 because it enables an environment that is familiar to developers on Roblox.
 
-[API reference <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](api)
+{{<goto page="/api">}}API reference{{</goto>}}
 
 ## Instance management
 rbxmk provides an API for managing instances that closely resembles Roblox's
@@ -63,11 +63,13 @@ instances. In addition to getting and setting properties, the usual methods for
 navigating instance trees are implemented, including Parent, FindFirstChild, and
 GetChildren.
 
+{{<noimpl reason="tags, pivots">}}
+
 Also implemented are supplementary operations for handling attributes and tags.
 Additionally, rbxmk implements Roblox's pivot system, which enables easy
 placement of 3D models.
 
-[Instances <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](overview/instances)
+{{<goto page="/overview/instances">}}Instances{{</goto>}}
 
 ## Forward-compatible
 Roblox's API is always changing. To keep up with these changes, rbxmk is
@@ -79,34 +81,36 @@ knowledge of Roblox. However, to improve convenience and familiarity,
 API dumps provided by Roblox can be used to make rbxmk more Roblox-like, or the
 user can supply their own descriptors, customized to suit their needs.
 
-[Descriptors <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](overview/descriptors)
+{{<goto page="/overview/descriptors">}}Descriptors{{</goto>}}
 
 ## Configurable
-Configuration files can be used to configure the behavior of rbxmk. Files are
-read and merged at various scopes: per computer, per user, per project, and
-more.
+{{<noimpl>}}
+Configuration files can be used to control the behavior of rbxmk. Files are read
+and merged at various scopes: per computer, per user, per project, and more.
 
-[Configuration <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](overview/configuration)
+{{<goto page="/overview/configuration">}}Configuration{{</goto>}}
 
 ## Safe and secure
+{{<noimpl>}}
 rbxmk provides a detailed permissions system that can reduce or eliminate the
 impact of malicious third-party scripts, while remaining adaptable to the user's
 needs, and curating a trustworthy ecosystem.
 
-[Permissions <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](overview/permissions)
+{{<goto page="/overview/permissions">}}Permissions{{</goto>}}
 
 ## First-party integration
+{{<noimpl>}}
 Sub-projects for integrating rbxmk into your DevOps workflow are available:
 
 - [setup-rbxmk](https://github.com/anaminus/setup-rbxmk) for GitHub Actions.
 - [setup-rbxmk]() for GitLab CI.
 
-[Automation <span class="icon"><i class="fas fa-arrow-right"></i></span></a>](overview/automation)
+{{<goto page="/overview/automation">}}Automation{{</goto>}}
 
 # Related projects
 
 - [Rojo](https://rojo.space/): Syncing between Roblox Studio and the file system.
 	- The [rojo.rbxmk.lua]() script can be used to build Rojo projects with
-	  rbxmk.
+	  rbxmk. {{<noimpl>}}
 - [Remodel](https://github.com/rojo-rbx/remodel): Scriptable Roblox multitool.
 	- The [rbxmk vs Remodel](overview/remodel) page compares the two projects.

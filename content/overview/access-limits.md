@@ -1,6 +1,7 @@
 +++
 weight = 50
 title = "File access limits"
+draft = true
 +++
 
 To reduce the impact of malicious scripts, rbxmk limits a script's access to the

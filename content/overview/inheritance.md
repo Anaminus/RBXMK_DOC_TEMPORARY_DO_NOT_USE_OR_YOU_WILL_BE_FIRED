@@ -1,6 +1,7 @@
 +++
 weight = 30
 title = "Value inheritance"
+draft = true
 +++
 
 Certain symbol fields on [Instances][Instance] have an inheritance behavior.

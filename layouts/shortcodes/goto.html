@@ -1,0 +1,1 @@
+<a href='{{$page := .Get "page"}}{{with index .Page.Site.Params $page}}{{.}}{{else}}{{if (urls.Parse $page).Scheme }}{{$page | safeURL | relLangURL}}{{else}}{{relref .Page $page}}{{end}}{{end}}' class='is-pretty-link'>{{.Inner | .Page.RenderString (dict "markup" "goldmark")}}<span class="icon"><i class="fas fa-arrow-right"></i></span></a>

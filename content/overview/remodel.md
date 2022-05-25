@@ -1,5 +1,5 @@
 +++
-weight = 100
+weight = 60
 title = "rbxmk vs Remodel"
 description = "Comparision of rbxmk and Remodel."
 +++

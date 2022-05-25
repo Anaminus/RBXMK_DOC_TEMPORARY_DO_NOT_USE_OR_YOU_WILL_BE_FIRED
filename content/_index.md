@@ -70,6 +70,7 @@ end
 <div class="columns is-vcentered is-centered">
 <div class="column is-two-fifths is-size-5 is-size-6-touch">
 
+{{<noimpl reason="tags, pivots">}}
 First-class support for all data types, as well as attributes, tags, and pivots.
 
 </div>
@@ -102,6 +103,7 @@ model:PivotTo(CFrame.new(position))
 
 <div class="hero is-success is-medium">
 <div class="hero-body">
+{{<noimpl>}}
 <div class="title is-size-3 is-size-4-touch"><span class="icon-text"><span class="icon is-hidden-mobile" style="padding-right: 0.5em"><i class="fas fa-download"></i></span><span>Fast installation</span></span></div>
 <div class="subtitle is-size-5 is-size-6-touch">With a streamlined installer, getting started is a breeze.</div>
 </div>

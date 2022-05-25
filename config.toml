@@ -12,6 +12,9 @@ enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+refLinksErrorLevel = "WARNING"
+refLinksNotFoundURL = "/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/404.html"
+
 [Author]
   name = "Anaminus"
 
