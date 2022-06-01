@@ -11,9 +11,10 @@ description = "A tool for processing Roblox files."
 <div class="columns">
 <div class="column has-text-centered is-size-4 is-size-5-touch">
 
-**rbxmk** is a tool for processing [Roblox][roblox] files.
+**rbxmk** is a tool for processing Roblox files.
 
-Whether your project is a game, plugin, module, or whatever, rbxmk is essential for your workflow.
+Whether your project is a game, plugin, module, or whatever, rbxmk is essential
+for your workflow.
 
 </div>
 </div>
@@ -26,8 +27,8 @@ Whether your project is a game, plugin, module, or whatever, rbxmk is essential 
 <div class="columns is-vcentered is-centered">
 <div class="column is-two-fifths is-size-5 is-size-6-touch">
 
-Through a familiar [Lua][lua] API, data can be received, transformed, and sent
-in whatever way you need.
+Through a familiar Lua API, data can be received, transformed, and sent in
+whatever way you need.
 
 </div>
 <div class="column is-three-fifths is-size-6 is-size-7-touch">
@@ -116,6 +117,3 @@ model:PivotTo(CFrame.new(position))
 </div>
 
 </div>
-
-[roblox]: https://corp.roblox.com
-[lua]: https://lua.org
