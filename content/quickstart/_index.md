@@ -17,9 +17,8 @@ Used to Remodel? check out the [comparison guide](overview/remodel).
 # Steps
 <p class="is-size-4 is-italic">Give a classic place a fresh look.</p>
 
-These steps uses Windows for their examples. See the
-[Installation](installation) page for instructions on how to install rbxmk for
-other operating systems.
+These steps use Windows for their examples. See the [Installation](installation)
+page for instructions on how to install rbxmk for other operating systems.
 
 ## 1) Install rbxmk
 {{<noimpl>}}
