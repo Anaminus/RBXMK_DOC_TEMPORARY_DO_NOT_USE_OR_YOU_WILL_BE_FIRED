@@ -22,6 +22,7 @@ The following formats are available:
 - [luau](api/formats/luau)
 - [modulescript.lua](api/formats/modulescript.lua)
 - [modulescript.luau](api/formats/modulescript.luau)
+- [patch.json](api/formats/patch.json)
 - [rbxattr](api/formats/rbxattr)
 - [rbxl](api/formats/rbxl)
 - [rbxlx](api/formats/rbxlx)
