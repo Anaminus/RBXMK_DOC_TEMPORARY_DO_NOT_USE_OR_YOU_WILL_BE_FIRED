@@ -40,10 +40,12 @@ variables are expanded:
 | Variable | Description |
 | --- | --- |
 | `$script_name`, `$sn` | The base name of the currently running script. Empty for stdin. |
-| `$script_directory`, `$script_dir`, `$sd` | The directory of the currently running script. Empty for stdin. |
-| `$root_script_directory`, `$root_script_dir`, `$rsd` | The directory of the first running script. Empty for stdin. |
-| `$working_directory`, `$working_dir`, `$wd` | The current working directory. |
-| `$temp_directory`, `$temp_dir`, `$tmp` | The directory for temporary files. |
+| `$script_directory`, `$script_dir`, `$sd` | The directory of the currently running script. Expands to the working directory for stdin. Causes an error if the working directory could not be located. |
+| `$root_script_directory`, `$root_script_dir`, `$rsd` | The directory of the first running script. Expands to the working directory for stdin. Causes an error if the working directory could not be located. |
+| `$working_directory`, `$working_dir`, `$wd` | The current working directory. Causes an error if the working directory could not be located. |
+| `$temp_directory`, `$temp_dir`, `$tmp` | The directory for temporary files. Causes an error if a temporary directory could not be located. |
+
+Other variables cause an error to be thrown.
 
 ## join
 
