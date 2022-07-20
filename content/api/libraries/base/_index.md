@@ -21,7 +21,7 @@ It is loaded directly into the global environment.
 | [pairs](#pairs) | Function | Returns an iterator over a table. |
 | [pcall](#pcall) | Function | Calls a function in protected mode. |
 | [print](#print) | Function | Prints values to standard output. |
-| [select](#select) | Function | Returns arguments after a given index.<br>Returns the number of arguments. |
+| [select](#select) | Function | Returns arguments after a given index. Returns the number of arguments. |
 | [setmetatable](#setmetatable) | Function | Sets the metatable of a value. |
 | [tonumber](#tonumber) | Function | Converts a value to a number. |
 | [tostring](#tostring) | Function | Converts a value to a string. |

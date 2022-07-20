@@ -13,7 +13,7 @@ the result of the `#` operator.
 | Item | Kind | Description |
 | --- | --- | --- |
 | [concat](#concat) | Function | Concatenates each element as a string. |
-| [insert](#insert) | Function | Inserts an element.<br>Appends an element. |
+| [insert](#insert) | Function | Inserts an element. Appends an element. |
 | [maxn](#maxn) | Function | Returns the largest positive numerical index. |
 | [remove](#remove) | Function | Removes an element. |
 | [sort](#sort) | Function | Sorts elements. |

@@ -31,7 +31,7 @@ variables.
 | [modf](#modf) | Function | Returns the integral and fractional part of *x*. |
 | [pow](#pow) | Function | Returns `x^y`. |
 | [rad](#rad) | Function | Returns angle *x* in radians. |
-| [random](#random) | Function | Returns a random number in the range \[0, 1).<br>Returns a random number in the range \[1, *m*\].<br>Returns a random number in the range \[ *m*, *n*\]. |
+| [random](#random) | Function | Returns a random number in the range \[0, 1). Returns a random number in the range \[1, *m*\]. Returns a random number in the range \[ *m*, *n*\]. |
 | [randomseed](#randomseed) | Function | Sets *x* as the seed for the random number generator. |
 | [sin](#sin) | Function | Returns the sine of *x*. |
 | [sinh](#sinh) | Function | Returns the hyperbolic sine of *x*. |

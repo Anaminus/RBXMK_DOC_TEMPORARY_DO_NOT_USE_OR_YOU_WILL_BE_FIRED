@@ -20,12 +20,12 @@ print(instance[sym.IsService]) --> true
 
 | Item | Kind | Description |
 | --- | --- | --- |
-| [AttrConfig](#attrconfig) | Field | Gets the inherited [AttrConfig](type:AttrConfig) of an<br>instance. |
+| [AttrConfig](#attrconfig) | Field | Gets the inherited [AttrConfig](type:AttrConfig) of an instance. |
 | [Desc](#desc) | Field | Gets the inherited [descriptor](type:Desc) of an instance. |
 | [IsService](#isservice) | Field | Determines whether an instance is a service. |
 | [Metadata](#metadata) | Field | Gets the metadata of a [DataModel](type:DataModel). |
 | [Properties](#properties) | Field | Gets the properties of an instance. |
-| [RawAttrConfig](#rawattrconfig) | Field | Accesses the direct [AttrConfig](type:AttrConfig) of an<br>instance. |
+| [RawAttrConfig](#rawattrconfig) | Field | Accesses the direct [AttrConfig](type:AttrConfig) of an instance. |
 | [RawDesc](#rawdesc) | Field | Accesses the direct [descriptor](type:Desc) of an instance. |
 | [Reference](#reference) | Field | Determines the value used to identify the instance. |
 

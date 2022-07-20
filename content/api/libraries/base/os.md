@@ -10,7 +10,7 @@ The **os** library contains functions related to the operating system.
 | Item | Kind | Description |
 | --- | --- | --- |
 | [clock](#clock) | Function | Returns the CPU time. |
-| [date](#date) | Function | Returns the current time.<br>Returns the time as a table.<br>Returns the time as a formatted string. |
+| [date](#date) | Function | Returns the current time. Returns the time as a table. Returns the time as a formatted string. |
 | [difftime](#difftime) | Function | Returns the difference between two times. |
 | [time](#time) | Function | Returns a numeric time. |
 
