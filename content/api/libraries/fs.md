@@ -5,6 +5,8 @@ title = "fs"
 
 The **fs** library provides an interface to the file system.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [dir](#dir) | Function | Gets a list of files in a directory. |
@@ -14,6 +16,8 @@ The **fs** library provides an interface to the file system.
 | [rename](#rename) | Function | Moves a file or directory. |
 | [stat](#stat) | Function | Gets metadata about a file. |
 | [write](#write) | Function | Writes data to a file in a certain format. |
+
+</div>
 
 # Functions
 

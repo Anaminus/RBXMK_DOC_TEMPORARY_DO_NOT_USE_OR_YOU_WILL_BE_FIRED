@@ -7,6 +7,8 @@ The **table** library is an extension to the standard library that
 includes the same additions to
 [Roblox's table library](https://developer.roblox.com/en-us/api-reference/lua-docs/table).
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [clear](#clear) | Function | Removes all entries from a table. |
@@ -15,6 +17,8 @@ includes the same additions to
 | [move](#move) | Function | Copies the entries in a table. |
 | [pack](#pack) | Function | Packs arguments into a table. |
 | [unpack](#unpack) | Function | Unpacks a table into arguments. |
+
+</div>
 
 # Functions
 

@@ -5,12 +5,16 @@ title = "json"
 
 The **json** library provides functions for handling JSON data.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [diff](#diff) | Function | Get difference between two JSON values. |
 | [fromString](#fromstring) | Function | Converts a string to a JSON value. |
 | [patch](#patch) | Function | Tranforms a JSON value according to a patch. |
 | [string](#string) | Function | no content for topic "Libraries/json:Fields/string/Summary" |
+
+</div>
 
 # Functions
 

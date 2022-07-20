@@ -8,6 +8,8 @@ The **table** library provides functions for manipulating tables.
 Most functions assume that the table is an array, where "length" refers to
 the result of the `#` operator.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [concat](#concat) | Function | Concatenates each element as a string. |
@@ -15,6 +17,8 @@ the result of the `#` operator.
 | [maxn](#maxn) | Function | Returns the largest positive numerical index. |
 | [remove](#remove) | Function | Removes an element. |
 | [sort](#sort) | Function | Sorts elements. |
+
+</div>
 
 # Functions
 

@@ -14,7 +14,7 @@ already exist. Libraries are loaded in ascending order by their priority value.
 
 The following libraries are available:
 
-<div class="api-list">
+<div class="api-list one">
 
 Library                                | Description
 ---------------------------------------|------------

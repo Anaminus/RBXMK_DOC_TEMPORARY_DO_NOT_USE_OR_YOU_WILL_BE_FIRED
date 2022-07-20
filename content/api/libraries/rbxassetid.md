@@ -6,10 +6,14 @@ title = "rbxassetid"
 The **rbxassetid** library provides an interface to assets on the Roblox
 website.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [read](#read) | Function | Reads data from a rbxassetid in a certain format. |
 | [write](#write) | Function | Writes data to a rbxassetid in a certain format. |
+
+</div>
 
 # Functions
 

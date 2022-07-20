@@ -7,6 +7,8 @@ The **base** library is an abridgment of the
 [Lua 5.1 standard library](https://www.lua.org/manual/5.1/manual.html#5).
 It is loaded directly into the global environment.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [\_G](#_g) | Field | The global environment. |
@@ -30,6 +32,8 @@ It is loaded directly into the global environment.
 | [os](os) | Struct | Functions related to the operating system. |
 | [string](string) | Struct | Provides functions for string manipulation. |
 | [table](table) | Struct | Provides functions for manipulating tables. |
+
+</div>
 
 # Fields
 

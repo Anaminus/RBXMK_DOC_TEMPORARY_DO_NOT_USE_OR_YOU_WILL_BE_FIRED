@@ -7,12 +7,16 @@ The **math** library is an extension to the standard library that includes
 the same additions to [Roblox's\
 math library](https://developer.roblox.com/en-us/api-reference/lua-docs/math):
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [clamp](#clamp) | Function | Returns a number clamped between a minimum and maximum. |
 | [log](#log) | Function | Includes optional base argument. |
 | [round](#round) | Function | Rounds a number to the nearest integer. |
 | [sign](#sign) | Function | Returns the sign of a number. |
+
+</div>
 
 # Functions
 

@@ -15,6 +15,8 @@ string.byte(s, ...)
 
 ```
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [byte](#byte) | Function | Gets the bytes of a string subset. |
@@ -30,6 +32,8 @@ string.byte(s, ...)
 | [reverse](#reverse) | Function | Reverses a string. |
 | [sub](#sub) | Function | Returns a subset of a string. |
 | [upper](#upper) | Function | Converts lowercase letters to uppercase. |
+
+</div>
 
 # Functions
 

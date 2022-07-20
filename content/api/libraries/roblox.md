@@ -6,9 +6,13 @@ title = "roblox"
 The Roblox library contains an environment similar to the Roblox Lua API. It
 is included directly into the global environment.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [typeof](#typeof) | Function | Gets the internal type of a userdata. |
+
+</div>
 
 # Functions
 

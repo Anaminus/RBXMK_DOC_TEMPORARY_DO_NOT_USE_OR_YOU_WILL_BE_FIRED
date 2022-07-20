@@ -6,9 +6,13 @@ title = "http"
 The **http** library provides an interface to resources on the network via
 HTTP.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [request](#request) | Function | Begins an HTTP request. |
+
+</div>
 
 # Functions
 

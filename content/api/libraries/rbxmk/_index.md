@@ -5,6 +5,8 @@ title = "rbxmk"
 
 The **rbxmk** library contains functions related to the rbxmk engine.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [globalAttrConfig](#globalattrconfig) | Field | Get or set the global AttrConfig. |
@@ -20,6 +22,8 @@ The **rbxmk** library contains functions related to the rbxmk engine.
 | [runString](#runstring) | Function | Run a string as a Lua chunk. |
 | [set](#set) | Function | Sets the property of an instance. |
 | [Enum](enum) | Struct | Collection of rbxmk-defined enums. |
+
+</div>
 
 # Fields
 

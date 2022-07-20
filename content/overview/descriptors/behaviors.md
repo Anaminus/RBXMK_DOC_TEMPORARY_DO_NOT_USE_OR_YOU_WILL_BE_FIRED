@@ -13,7 +13,7 @@ of class and field has no definition, that behavior is used as the default. A
 behavior can be explicitly unset by setting the behavior to an empty string.
 
 # Basic
-<div class="api-list">
+<div class="api-list one">
 
 Behavior                             | Description
 -------------------------------------|------------
@@ -38,7 +38,7 @@ Behavior                             | Description
 </div>
 
 # Symbols
-<div class="api-list">
+<div class="api-list one">
 
 Behavior           | Description
 -------------------|------------
@@ -51,7 +51,7 @@ Behavior           | Description
 </div>
 
 # Descend
-<div class="api-list">
+<div class="api-list one">
 
 Behavior        | Description
 ----------------|------------
@@ -60,7 +60,7 @@ Behavior        | Description
 </div>
 
 # DataModel
-<div class="api-list">
+<div class="api-list one">
 
 Behavior                     | Description
 -----------------------------|------------
@@ -70,7 +70,7 @@ Behavior                     | Description
 </div>
 
 # Attributes
-<div class="api-list">
+<div class="api-list one">
 
 Behavior                       | Description
 -------------------------------|------------
@@ -83,7 +83,7 @@ Behavior                       | Description
 </div>
 
 # Tags
-<div class="api-list">
+<div class="api-list one">
 
 Behavior                       | Description
 -------------------------------|------------
@@ -98,7 +98,7 @@ Behavior                       | Description
 </div>
 
 # Pivots
-<div class="api-list">
+<div class="api-list one">
 
 Behavior                        | Description
 --------------------------------|------------

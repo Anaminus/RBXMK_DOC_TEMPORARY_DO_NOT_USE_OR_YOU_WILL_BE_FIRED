@@ -9,10 +9,14 @@ clipboard.
 **The clipboard is currently available only on Windows. Other operating**
 **systems return no data.**
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [read](#read) | Function | Gets data from the clipboard in one of a number of formats. |
 | [write](#write) | Function | Sets data to the clipboard in a number of formats. |
+
+</div>
 
 # Functions
 

@@ -7,9 +7,13 @@ The **string** library is an extension to the standard library that
 includes the same additions to
 [Roblox's string library](https://developer.roblox.com/en-us/api-reference/lua-docs/string).
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [split](#split) | Function | Splits a string into a list of substrings. |
+
+</div>
 
 # Functions
 

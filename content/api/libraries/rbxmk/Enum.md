@@ -5,10 +5,14 @@ title = "Enum"
 
 The **Enum** field is a collection of Enum values defined by rbxmk.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [DescActionElement](#descactionelement) | Field | no content for topic "Types/DescAction:Enums/DescActionElement/Summary" |
 | [DescActionType](#descactiontype) | Field | no content for topic "Types/DescAction:Enums/DescActionType/Summary" |
+
+</div>
 
 # Fields
 
@@ -17,6 +21,7 @@ The **Enum** field is a collection of Enum values defined by rbxmk.
 ## DescActionElement
 
 no content for topic "Types/DescAction:Enums/DescActionElement/Description"
+<div class="api-list one">
 
 | Enum item | Value | Description |
 | --- | --- | --- |
@@ -28,12 +33,17 @@ no content for topic "Types/DescAction:Enums/DescActionElement/Description"
 | Enum | 6 |  |
 | EnumItem | 7 |  |
 
+</div>
+
 ## DescActionType
 
 no content for topic "Types/DescAction:Enums/DescActionType/Description"
+<div class="api-list one">
 
 | Enum item | Value | Description |
 | --- | --- | --- |
 | Remove | -1 |  |
 | Change | 0 |  |
 | Add | 1 |  |
+
+</div>

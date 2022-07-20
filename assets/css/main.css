@@ -57,7 +57,16 @@
 .typedef {
 	padding: 0;
 }
-.api-list table td:first-child {
+.api-list.one table td:nth-child(1) {
+	word-break: normal;
+}
+.api-list.two table td:nth-child(2) {
+	word-break: normal;
+}
+.api-list.three table td:nth-child(3) {
+	word-break: normal;
+}
+.api-list.four table td:nth-child(4) {
 	word-break: normal;
 }
 .showcase .columns {

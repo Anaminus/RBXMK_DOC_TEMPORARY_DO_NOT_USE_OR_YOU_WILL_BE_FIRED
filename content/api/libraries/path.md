@@ -5,12 +5,16 @@ title = "path"
 
 The **path** library provides functions that handle file paths.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [clean](#clean) | Function | Cleans up a file path. |
 | [expand](#expand) | Function | Expands predefined file path variables. |
 | [join](#join) | Function | Joins a number of file paths together. |
 | [split](#split) | Function | Splits a file path into its components. |
+
+</div>
 
 # Functions
 

@@ -16,6 +16,8 @@ print(instance[sym.IsService]) --> true
 
 ```
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [AttrConfig](#attrconfig) | Field | Gets the inherited [AttrConfig](type:AttrConfig) of an<br>instance. |
@@ -26,6 +28,8 @@ print(instance[sym.IsService]) --> true
 | [RawAttrConfig](#rawattrconfig) | Field | Accesses the direct [AttrConfig](type:AttrConfig) of an<br>instance. |
 | [RawDesc](#rawdesc) | Field | Accesses the direct [descriptor](type:Desc) of an instance. |
 | [Reference](#reference) | Field | Determines the value used to identify the instance. |
+
+</div>
 
 # Fields
 

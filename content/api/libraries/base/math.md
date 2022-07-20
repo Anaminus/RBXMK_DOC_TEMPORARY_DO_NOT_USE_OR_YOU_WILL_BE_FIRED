@@ -6,6 +6,8 @@ title = "math"
 The **math** library contains common mathematical functions and
 variables.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [huge](#huge) | Field | The value >= any other numerical value. |
@@ -36,6 +38,8 @@ variables.
 | [sqrt](#sqrt) | Function | Returns the square root of *x*. |
 | [tan](#tan) | Function | Returns the tangent of *x*. |
 | [tanh](#tanh) | Function | Returns the hyperbolic tangent of *x*. |
+
+</div>
 
 # Fields
 

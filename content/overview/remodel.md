@@ -26,7 +26,7 @@ rbxmk run --desc-latest --desc-patch dump.desc-patch.json script.lua
 Most methods for navigating instance trees are available in both Remodel and
 rbxmk.
 
-<div class="api-list">
+<div class="api-list one">
 
 Roblox                    | Remodel                                 | rbxmk
 --------------------------|-----------------------------------------|------

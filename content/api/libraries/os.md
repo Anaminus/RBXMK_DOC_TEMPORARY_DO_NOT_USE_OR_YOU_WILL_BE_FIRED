@@ -5,9 +5,13 @@ title = "os"
 
 The **os** library is an extension to the standard library.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [getenv](#getenv) | Function | Gets an environment variable. |
+
+</div>
 
 # Functions
 

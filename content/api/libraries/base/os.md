@@ -5,12 +5,16 @@ title = "os"
 
 The **os** library contains functions related to the operating system.
 
+<div class="api-list one two">
+
 | Item | Kind | Description |
 | --- | --- | --- |
 | [clock](#clock) | Function | Returns the CPU time. |
 | [date](#date) | Function | Returns the current time.<br>Returns the time as a table.<br>Returns the time as a formatted string. |
 | [difftime](#difftime) | Function | Returns the difference between two times. |
 | [time](#time) | Function | Returns a numeric time. |
+
+</div>
 
 # Functions
 
