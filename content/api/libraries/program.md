@@ -1,6 +1,8 @@
 +++
 weight = 100
 title = "program"
+description = "Values related to the running program."
+categories = ["API", "Library"]
 +++
 
 The **program** library is loaded directly into the global environment. It

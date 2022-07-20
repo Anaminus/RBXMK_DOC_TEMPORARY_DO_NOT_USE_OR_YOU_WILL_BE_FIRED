@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "rbxassetid"
+description = "An interface to Roblox assets."
+categories = ["API", "Library"]
 +++
 
 The **rbxassetid** library provides an interface to assets on the Roblox

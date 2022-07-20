@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "fs"
+description = "An interface to the file system."
+categories = ["API", "Library"]
 +++
 
 The **fs** library provides an interface to the file system.

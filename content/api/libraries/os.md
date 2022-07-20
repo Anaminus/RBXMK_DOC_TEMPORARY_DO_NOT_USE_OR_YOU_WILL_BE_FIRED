@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "os"
+description = "Extensions to the standard os library."
+categories = ["API", "Library"]
 +++
 
 The **os** library is an extension to the standard library.

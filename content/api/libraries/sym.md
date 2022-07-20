@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "sym"
+description = "Symbols for accessing instance metadata."
+categories = ["API", "Library"]
 +++
 
 The **sym** library contains **Symbol** values. A symbol is a unique

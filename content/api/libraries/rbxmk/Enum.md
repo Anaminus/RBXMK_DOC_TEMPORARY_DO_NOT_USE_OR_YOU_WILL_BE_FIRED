@@ -1,6 +1,8 @@
 +++
 weight = 100
 title = "Enum"
+description = "Collection of rbxmk-defined enums."
+categories = ["API", "Struct"]
 +++
 
 The **Enum** field is a collection of Enum values defined by rbxmk.

@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "table"
+description = "Extensions to the standard table library."
+categories = ["API", "Library"]
 +++
 
 The **table** library is an extension to the standard library that

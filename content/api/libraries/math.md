@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "math"
+description = "Extensions to the standard math library."
+categories = ["API", "Library"]
 +++
 
 The **math** library is an extension to the standard library that includes

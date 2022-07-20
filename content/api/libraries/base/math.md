@@ -1,6 +1,8 @@
 +++
 weight = 100
 title = "math"
+description = "Common mathematical functions."
+categories = ["API", "Struct"]
 +++
 
 The **math** library contains common mathematical functions and

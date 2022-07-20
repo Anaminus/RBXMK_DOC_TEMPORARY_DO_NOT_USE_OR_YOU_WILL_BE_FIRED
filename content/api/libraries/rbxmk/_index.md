@@ -1,6 +1,8 @@
 +++
 weight = 101
 title = "rbxmk"
+description = "An interface to the rbxmk engine, and the rbxmk environment."
+categories = ["API", "Library"]
 +++
 
 The **rbxmk** library contains functions related to the rbxmk engine.

@@ -1,6 +1,8 @@
 +++
 weight = 100
 title = "table"
+description = "Provides functions for manipulating tables."
+categories = ["API", "Struct"]
 +++
 
 The **table** library provides functions for manipulating tables.

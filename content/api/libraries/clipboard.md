@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "clipboard"
+description = "An interface to the clipboard."
+categories = ["API", "Library"]
 +++
 
 The **clipboard** library provides an interface to the operating system's

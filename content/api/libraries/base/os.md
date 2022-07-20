@@ -1,6 +1,8 @@
 +++
 weight = 100
 title = "os"
+description = "Functions related to the operating system."
+categories = ["API", "Struct"]
 +++
 
 The **os** library contains functions related to the operating system.

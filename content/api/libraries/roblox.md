@@ -1,6 +1,8 @@
 +++
 weight = 102
 title = "roblox"
+description = "An environment emulating the Roblox Lua API."
+categories = ["API", "Library"]
 +++
 
 The Roblox library contains an environment similar to the Roblox Lua API. It

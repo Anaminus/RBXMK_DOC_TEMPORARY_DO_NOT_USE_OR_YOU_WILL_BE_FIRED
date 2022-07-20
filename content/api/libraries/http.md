@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "http"
+description = "An interface to resources via HTTP."
+categories = ["API", "Library"]
 +++
 
 The **http** library provides an interface to resources on the network via

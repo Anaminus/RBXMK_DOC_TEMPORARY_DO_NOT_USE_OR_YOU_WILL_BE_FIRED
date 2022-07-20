@@ -1,6 +1,8 @@
 +++
 weight = 99
 title = "base"
+description = "The Lua 5.1 standard library, abridged."
+categories = ["API", "Library"]
 +++
 
 The **base** library is an abridgment of the

@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "string"
+description = "Extensions to the standard string library."
+categories = ["API", "Library"]
 +++
 
 The **string** library is an extension to the standard library that

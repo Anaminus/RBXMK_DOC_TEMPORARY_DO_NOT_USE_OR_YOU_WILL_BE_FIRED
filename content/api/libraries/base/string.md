@@ -1,6 +1,8 @@
 +++
 weight = 100
 title = "string"
+description = "Provides functions for string manipulation."
+categories = ["API", "Struct"]
 +++
 
 The **string** library provides functions for string manipulation.

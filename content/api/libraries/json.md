@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "json"
+description = "Operations for handling JSON data."
+categories = ["API", "Library"]
 +++
 
 The **json** library provides functions for handling JSON data.

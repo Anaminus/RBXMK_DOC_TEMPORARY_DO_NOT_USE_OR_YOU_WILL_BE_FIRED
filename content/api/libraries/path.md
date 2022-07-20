@@ -1,6 +1,8 @@
 +++
 weight = 110
 title = "path"
+description = "Handles file paths."
+categories = ["API", "Library"]
 +++
 
 The **path** library provides functions that handle file paths.
