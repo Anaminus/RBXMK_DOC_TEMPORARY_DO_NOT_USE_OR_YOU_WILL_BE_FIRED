@@ -33,7 +33,6 @@ Library                                | Description
 [string](api/libraries/string)         | Extensions to the standard string library.
 [sym](api/libraries/sym)               | Symbols for accessing instance metadata.
 [table](api/libraries/table)           | Extensions to the standard table library.
-[types](api/libraries/types)           | Fallbacks for constructing certain types.
 
 </div>
 
