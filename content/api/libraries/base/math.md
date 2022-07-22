@@ -8,6 +8,10 @@ categories = ["API", "Struct"]
 The **math** library contains common mathematical functions and
 variables.
 
+# Overview
+
+----
+
 <div class="api-list one two">
 
 | Item | Kind | Description |

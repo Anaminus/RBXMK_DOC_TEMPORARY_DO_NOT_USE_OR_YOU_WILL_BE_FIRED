@@ -10,6 +10,10 @@ The **table** library provides functions for manipulating tables.
 Most functions assume that the table is an array, where "length" refers to
 the result of the `#` operator.
 
+# Overview
+
+----
+
 <div class="api-list one two">
 
 | Item | Kind | Description |

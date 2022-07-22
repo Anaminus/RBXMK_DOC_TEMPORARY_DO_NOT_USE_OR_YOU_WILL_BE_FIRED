@@ -9,6 +9,10 @@ The **table** library is an extension to the standard library that
 includes the same additions to
 [Roblox's table library](https://developer.roblox.com/en-us/api-reference/lua-docs/table).
 
+# Overview
+
+----
+
 <div class="api-list one two">
 
 | Item | Kind | Description |

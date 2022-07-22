@@ -11,6 +11,10 @@ clipboard.
 **The clipboard is currently available only on Windows. Other operating**
 **systems return no data.**
 
+# Overview
+
+----
+
 <div class="api-list one two">
 
 | Item | Kind | Description |

@@ -7,6 +7,10 @@ categories = ["API", "Library"]
 
 The **path** library provides functions that handle file paths.
 
+# Overview
+
+----
+
 <div class="api-list one two">
 
 | Item | Kind | Description |

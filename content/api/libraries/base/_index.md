@@ -9,6 +9,10 @@ The **base** library is an abridgment of the
 [Lua 5.1 standard library](https://www.lua.org/manual/5.1/manual.html#5).
 It is loaded directly into the global environment.
 
+# Overview
+
+----
+
 <div class="api-list one two">
 
 | Item | Kind | Description |
