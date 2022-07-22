@@ -164,3 +164,6 @@ executable, and the commands that can be run.
 
 The [API reference](api) pages provide documentation of the API available in
 rbxmk's Lua environment.
+
+The [Guide](guides) pages provide information about performing specific tasks
+with rbxmk.
