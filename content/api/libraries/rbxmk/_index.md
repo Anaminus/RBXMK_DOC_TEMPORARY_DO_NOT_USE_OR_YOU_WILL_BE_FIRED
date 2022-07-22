@@ -40,7 +40,7 @@ items that utilize an AttrConfig will fallback to the global AttrConfig when
 possible.
 
 See the [Value inheritance](README.md#user-content-value-inheritance)
-section for details on how this field is inherited by [Instances](type:Instance).
+section for details on how this field is inherited by [Instances](/api/types/Instance).
 
 ## globalDesc
 
@@ -51,7 +51,7 @@ items that utilize a root descriptor will fallback to the global descriptor when
 possible.
 
 See the [Value inheritance](README.md#user-content-value-inheritance)
-section for details on how this field is inherited by [Instances](type:Instance).
+section for details on how this field is inherited by [Instances](/api/types/Instance).
 
 # Functions
 
@@ -62,7 +62,7 @@ section for details on how this field is inherited by [Instances](type:Instance)
  `rbxmk.decodeFormat(format: string, bytes: BinaryString): (value: any)`
 
 The **decodeFormat** function decodes *bytes* into a value according
-to *format*. The exact details of each format are described in the [Formats](frag:formats) documents.
+to *format*. The exact details of each format are described in the [Formats](/api/formats) documents.
 
 decodeFormat will throw an error if the format does not exist, or the format
 has no decoder defined.
@@ -73,7 +73,7 @@ has no decoder defined.
 
 The **encodeFormat** function encodes *value* into a sequence of
 bytes according to *format*. The exact details of each format are described
-in the [Formats](frag:formats) document.
+in the [Formats](/api/formats) document.
 
 encodeFormat will throw an error if the format does not exist, or the format
 has no encoder defined.

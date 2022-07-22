@@ -29,7 +29,7 @@ clipboard.
  `clipboard.read(...: FormatSelector): (value: any?)`
 
 The **read** function gets a value from the clipboard according to one of
-the given [formats](frag:formats).
+the given [formats](/api/formats).
 
 Each format has a number of associated [media types](https://en.wikipedia.org/wiki/Media_type). Each format is
 traversed in order, and each media type within a format is traversed in order.
@@ -46,7 +46,7 @@ is returned.
  `clipboard.write(value: any, ...: FormatSelector)`
 
 The **write** function sets *value* to the clipboard according to the
-given [formats](frag:formats).
+given [formats](/api/formats).
 
 Each format has a number of associated [media types](https://en.wikipedia.org/wiki/Media_type). For each
 format, the data is encoded in the format, which is then sent to the clipboard

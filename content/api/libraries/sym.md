@@ -6,7 +6,7 @@ categories = ["API", "Library"]
 +++
 
 The **sym** library contains **Symbol** values. A symbol is a unique
-identifier that can be used to access certain metadata fields of an [Instance](type:Instance).
+identifier that can be used to access certain metadata fields of an [Instance](/api/types/Instance).
 
 An instance can be indexed with a symbol to get a metadata value in the same
 way it can be indexed with a string to get a property value:
@@ -22,13 +22,13 @@ print(instance[sym.IsService]) --> true
 
 | Item | Kind | Description |
 | --- | --- | --- |
-| [AttrConfig](#attrconfig) | Field | Gets the inherited [AttrConfig](type:AttrConfig) of an instance. |
-| [Desc](#desc) | Field | Gets the inherited [descriptor](type:Desc) of an instance. |
+| [AttrConfig](#attrconfig) | Field | Gets the inherited [AttrConfig](/api/types/AttrConfig) of an instance. |
+| [Desc](#desc) | Field | Gets the inherited [descriptor](/api/types/Desc) of an instance. |
 | [IsService](#isservice) | Field | Determines whether an instance is a service. |
-| [Metadata](#metadata) | Field | Gets the metadata of a [DataModel](type:DataModel). |
+| [Metadata](#metadata) | Field | Gets the metadata of a [DataModel](/api/types/DataModel). |
 | [Properties](#properties) | Field | Gets the properties of an instance. |
-| [RawAttrConfig](#rawattrconfig) | Field | Accesses the direct [AttrConfig](type:AttrConfig) of an instance. |
-| [RawDesc](#rawdesc) | Field | Accesses the direct [descriptor](type:Desc) of an instance. |
+| [RawAttrConfig](#rawattrconfig) | Field | Accesses the direct [AttrConfig](/api/types/AttrConfig) of an instance. |
+| [RawDesc](#rawdesc) | Field | Accesses the direct [descriptor](/api/types/Desc) of an instance. |
 | [Reference](#reference) | Field | Determines the value used to identify the instance. |
 
 </div>
@@ -41,13 +41,13 @@ print(instance[sym.IsService]) --> true
 
  `sym.AttrConfig: Symbol [readonly]`
 
-The **AttrConfig** symbol gets the inherited [AttrConfig](type:AttrConfig) of an instance.
+The **AttrConfig** symbol gets the inherited [AttrConfig](/api/types/AttrConfig) of an instance.
 
 ## Desc
 
  `sym.Desc: Symbol [readonly]`
 
-The **Desc** symbol gets the inherited [descriptor](type:Desc)
+The **Desc** symbol gets the inherited [descriptor](/api/types/Desc)
 of an instance.
 
 ## IsService
@@ -60,7 +60,7 @@ The **IsService** symbol determines whether an instance is a service.
 
  `sym.Metadata: Symbol [readonly]`
 
-The **Metadata** symbol gets the metadata of a [DataModel](type:DataModel).
+The **Metadata** symbol gets the metadata of a [DataModel](/api/types/DataModel).
 
 ## Properties
 
@@ -72,13 +72,13 @@ The **Properties** symbol gets the properties of an instance.
 
  `sym.RawAttrConfig: Symbol [readonly]`
 
-The **RawAttrConfig** symbol accesses the direct [AttrConfig](type:AttrConfig) of an instance.
+The **RawAttrConfig** symbol accesses the direct [AttrConfig](/api/types/AttrConfig) of an instance.
 
 ## RawDesc
 
  `sym.RawDesc: Symbol [readonly]`
 
-The **RawDesc** symbol accesses the direct [descriptor](type:Desc) of an instance.
+The **RawDesc** symbol accesses the direct [descriptor](/api/types/Desc) of an instance.
 
 ## Reference
 

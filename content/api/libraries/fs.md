@@ -57,12 +57,12 @@ occurred while creating a directory.
  `fs.read(path: string, format: FormatSelector?): (value: any)`
 
 The **read** function reads the content of the file at *path*, and
-decodes it into *value* according to the [format](frag:formats)
+decodes it into *value* according to the [format](/api/formats)
 matching the file extension of *path*. If *format* is given, then it
 will be used instead of the file extension.
 
-If the format returns an [Instance](type:Instance), then the Name property will be
-set to the "fstem" component of *path* according to [path.split](api:path.split).
+If the format returns an [Instance](/api/types/Instance), then the Name property will be
+set to the "fstem" component of *path* according to [path.split](/api/libraries/path#split).
 
 ## remove
 
@@ -111,6 +111,6 @@ stat does not follow symbolic links.
 
  `fs.write(path: string, value: any, format: FormatSelector?)`
 
-The **write** function encodes *value* according to the [format](frag:formats) matching the file extension of *path*, and
+The **write** function encodes *value* according to the [format](/api/formats) matching the file extension of *path*, and
 writes the result to the file at *path*. If *format* is given, then it
 will be used instead of the file extension.

@@ -24,5 +24,5 @@ HTTP.
 
  `http.request(options: HttpOptions): (req: HttpRequest)`
 
-The **request** function begins a request with the specified [options](type:HttpOptions). Returns a [request object](type:HttpRequest) that may be [resolved](type:HttpRequest.Resolve) or [canceled](type:HttpRequest.Cancel). Throws an error if the request
+The **request** function begins a request with the specified [options](/api/types/HttpOptions). Returns a [request object](/api/types/HttpRequest) that may be [resolved](/api/types/HttpRequest.Resolve) or [canceled](/api/types/HttpRequest.Cancel). Throws an error if the request
 could not be started.
