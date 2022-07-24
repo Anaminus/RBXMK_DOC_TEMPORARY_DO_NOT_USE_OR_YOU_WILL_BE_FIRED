@@ -396,7 +396,7 @@ descriptor. Otherwise, any property can be any type of value.
 
 ## \_\_newindex
 
- `Instance[property: string] = (value: any?)`
+ `Instance[property: string] -> (value: any?)`
 
 The **newindex** operator sets the value of a property of the instance. If
 the instance has a descriptor, then the the properties are enforced by the

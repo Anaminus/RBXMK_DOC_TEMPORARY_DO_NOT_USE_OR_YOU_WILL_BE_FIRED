@@ -108,19 +108,19 @@ to *goal* according to *alpha*, which has an interval of \[0, 1\].
 
 ## \_\_add
 
- `Vector2 + Vector2 = Vector2`
+ `Vector2 + Vector2 -> Vector2`
 
 The **add** operator returns a vector where each corresponding component
 of the two operands are summed.
 
 ## \_\_div
 
- `Vector2 / Vector2 = Vector2`
+ `Vector2 / Vector2 -> Vector2`
 
 The **div** operator returns a vector where each corresponding component
 of the two operands are divided.
 
- `Vector2 / Number = Vector2`
+ `Vector2 / Number -> Vector2`
 
 The **div** operator returns a vector where each component of the first
 operand is divided by the second operand.
@@ -134,25 +134,25 @@ corresponding component is equal.
 
 ## \_\_mul
 
- `Vector2 * Vector2 = Vector2`
+ `Vector2 * Vector2 -> Vector2`
 
 The **mul** operator returns a vector where each corresponding component
 of the two operands are multiplied.
 
- `Vector2 * Number = Vector2`
+ `Vector2 * Number -> Vector2`
 
 The **mul** operator returns a vector where each component of the first
 operand is multiplied by the second operand.
 
 ## \_\_sub
 
- `Vector2 - Vector2 = Vector2`
+ `Vector2 - Vector2 -> Vector2`
 
 The **sub** operator returns a vector where each corresponding component
 of the two operands are subtracted.
 
 ## \_\_unm
 
- `-Vector2 = Vector2`
+ `-Vector2 -> Vector2`
 
 The **unm** operator returns a vector where each component is negated.

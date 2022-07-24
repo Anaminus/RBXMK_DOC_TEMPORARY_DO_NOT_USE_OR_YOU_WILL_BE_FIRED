@@ -59,7 +59,7 @@ The **Scale** field returns the dynamic component of the UDim.
 
 ## \_\_add
 
- `UDim + UDim = UDim`
+ `UDim + UDim -> UDim`
 
 The **add** operator returns a UDim where each corresponding component of
 the two operands are summed.
@@ -73,13 +73,13 @@ corresponding component is equal.
 
 ## \_\_sub
 
- `UDim - UDim = UDim`
+ `UDim - UDim -> UDim`
 
 The **sub** operator returns a UDim where each corresponding component of
 the two operands are subtracted.
 
 ## \_\_unm
 
- `-UDim = UDim`
+ `-UDim -> UDim`
 
 The **unm** operator returns a UDim where each component is negated.

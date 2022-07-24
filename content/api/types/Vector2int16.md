@@ -66,19 +66,19 @@ The **Y** field returns the Y coordinate of the vector.
 
 ## \_\_add
 
- `Vector2int16 + Vector2int16 = Vector2int16`
+ `Vector2int16 + Vector2int16 -> Vector2int16`
 
 The **add** operator returns a vector where each corresponding component
 of the two operands are summed.
 
 ## \_\_div
 
- `Vector2int16 / Vector2int16 = Vector2int16`
+ `Vector2int16 / Vector2int16 -> Vector2int16`
 
 The **div** operator returns a vector where each corresponding component
 of the two operands are divided.
 
- `Vector2int16 / Number = Vector2int16`
+ `Vector2int16 / Number -> Vector2int16`
 
 The **div** operator returns a vector where each component of the first
 operand is divided by the second operand.
@@ -92,25 +92,25 @@ each corresponding component is equal.
 
 ## \_\_mul
 
- `Vector2int16 * Vector2int16 = Vector2int16`
+ `Vector2int16 * Vector2int16 -> Vector2int16`
 
 The **mul** operator returns a vector where each corresponding component
 of the two operands are multiplied.
 
- `Vector2int16 * Number = Vector2int16`
+ `Vector2int16 * Number -> Vector2int16`
 
 The **mul** operator returns a vector where each component of the first
 operand is multiplied by the second operand.
 
 ## \_\_sub
 
- `Vector2int16 - Vector2int16 = Vector2int16`
+ `Vector2int16 - Vector2int16 -> Vector2int16`
 
 The **sub** operator returns a vector where each corresponding component
 of the two operands are subtracted.
 
 ## \_\_unm
 
- `-Vector2int16 = Vector2int16`
+ `-Vector2int16 -> Vector2int16`
 
 The **unm** operator returns a vector where each component is negated.

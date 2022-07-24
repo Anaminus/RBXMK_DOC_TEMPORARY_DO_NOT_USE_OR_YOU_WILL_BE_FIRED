@@ -104,7 +104,7 @@ to *goal* according to *alpha*, which has an interval of \[0, 1\].
 
 ## \_\_add
 
- `UDim2 + UDim2 = UDim2`
+ `UDim2 + UDim2 -> UDim2`
 
 The **add** operator returns a UDim2 where each corresponding component of
 the two operands are summed.
@@ -118,13 +118,13 @@ corresponding component is equal.
 
 ## \_\_sub
 
- `UDim2 - UDim2 = UDim2`
+ `UDim2 - UDim2 -> UDim2`
 
 The **sub** operator returns a UDim2 where each corresponding component of
 the two operands are subtracted.
 
 ## \_\_unm
 
- `-UDim2 = UDim2`
+ `-UDim2 -> UDim2`
 
 The **unm** operator returns a UDim2 where each component is negated.

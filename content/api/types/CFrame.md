@@ -336,7 +336,7 @@ world space of the CFrame.
 
 ## \_\_add
 
- `CFrame + Vector3 = CFrame`
+ `CFrame + Vector3 -> CFrame`
 
 The **add** operator returns the CFrame translated in world space by the
 operand.
@@ -350,18 +350,18 @@ corresponding component is equal.
 
 ## \_\_mul
 
- `CFrame * CFrame = CFrame`
+ `CFrame * CFrame -> CFrame`
 
 The **mul** operator returns the composition of two CFrames.
 
- `CFrame * Vector3 = Vector3`
+ `CFrame * Vector3 -> Vector3`
 
 The **mul** operator returns the operand transformed from local to world
 space of the CFrame.
 
 ## \_\_sub
 
- `CFrame - Vector3 = CFrame`
+ `CFrame - Vector3 -> CFrame`
 
 The **sub** operator returns the CFrame translated in world space by the
 negation of the operand.
