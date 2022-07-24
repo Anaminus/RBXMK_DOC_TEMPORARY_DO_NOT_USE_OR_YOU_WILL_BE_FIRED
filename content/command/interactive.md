@@ -7,6 +7,8 @@ categories = ["Command"]
 
 `rbxmk interactive`
 
+**Aliases:** `i`
+
 The **interactive** command enters interactive mode. Each prompt executes
 a chunk of Lua code.
 
