@@ -23,7 +23,9 @@ description of the structure.
 
 ## indent
 
-`--indent string` `(default: "\t")`
+`--indent string`
+
+**Default:** `"\t"`
 
 Specifies the spacing used to indent the JSON output. If empty, the output will
 be minified (use --indent="" to specify an empty string).

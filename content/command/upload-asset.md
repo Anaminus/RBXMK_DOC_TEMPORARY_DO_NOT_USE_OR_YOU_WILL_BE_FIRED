@@ -55,12 +55,16 @@ The format to decode the file as. Defaults to --format.
 
 ## format
 
-`--format string` `(default: "bin")`
+`--format string`
+
+**Default:** `"bin"`
 
 The format to encode the asset as.
 
 ## id
 
-`--id int64` `(default: "0")`
+`--id int64`
+
+**Default:** `"0"`
 
 The ID of the asset to download (required).

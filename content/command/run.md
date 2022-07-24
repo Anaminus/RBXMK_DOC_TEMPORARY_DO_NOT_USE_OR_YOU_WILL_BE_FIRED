@@ -57,14 +57,18 @@ the descriptor.
 
 ## allow-insecure-paths
 
-`--allow-insecure-paths` `(default: "false")`
+`--allow-insecure-paths`
+
+**Default:** `"false"`
 
 Disable path restrictions, allowing scripts to access any path in the file
 system.
 
 ## debug
 
-`--debug` `(default: "false")`
+`--debug`
+
+**Default:** `"false"`
 
 Display stack traces when an error occurs.
 
@@ -77,7 +81,9 @@ any number of times. Multiple descriptors are merged in the order specified.
 
 ## desc-latest
 
-`--desc-latest` `(default: "false")`
+`--desc-latest`
+
+**Default:** `"false"`
 
 Download and start with the latest API dump as the global descriptor.
 
@@ -91,14 +97,18 @@ specified.
 
 ## include-root
 
-`--include-root stringArray` `(default: "[]")`
+`--include-root stringArray`
+
+**Default:** `"[]"`
 
 Mark a \`path\` as an accessible root directory. May be specified any number of
 times.
 
 ## libraries
 
-`--libraries stringArray` `(default: "[]")`
+`--libraries stringArray`
+
+**Default:** `"[]"`
 
 A comma-separated \`list\` of libraries to include or exclude. A name prefixed
 with "+" or nothing is included, and a name prefixed with "-" is excluded. If
