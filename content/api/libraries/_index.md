@@ -25,11 +25,11 @@ Library | Description
 [roblox](api/libraries/roblox) | An environment emulating the Roblox Lua API.
 [clipboard](api/libraries/clipboard) | An interface to the clipboard.
 [fs](api/libraries/fs) | An interface to the file system.
-[http](api/libraries/http) | An interface to network resources.
+[http](api/libraries/http) | An interface to resources via HTTP.
 [json](api/libraries/json) | Operations for handling JSON data.
 [math](api/libraries/math) | Extensions to the standard math library.
 [os](api/libraries/os) | Extensions to the standard os library.
-[path](api/libraries/path) | File path manipulation.
+[path](api/libraries/path) | Handles file paths.
 [rbxassetid](api/libraries/rbxassetid) | An interface to Roblox assets.
 [string](api/libraries/string) | Extensions to the standard string library.
 [sym](api/libraries/sym) | Symbols for accessing instance metadata.
