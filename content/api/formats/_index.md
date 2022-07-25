@@ -9,6 +9,7 @@ The following formats are available:
 <div class="column-list">
 
 <!-- REGION:formats -->
+- [base64](/api/formats/base64.md)
 - [bin](/api/formats/bin.md)
 - [client.lua](/api/formats/client.lua.md)
 - [client.luau](/api/formats/client.luau.md)
