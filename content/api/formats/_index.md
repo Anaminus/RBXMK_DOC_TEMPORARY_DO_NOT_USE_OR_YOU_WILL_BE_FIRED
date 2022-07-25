@@ -8,6 +8,7 @@ The following formats are available:
 
 <div class="column-list">
 
+<!-- REGION:formats -->
 - [bin](/api/formats/bin.md)
 - [client.lua](/api/formats/client.lua.md)
 - [client.luau](/api/formats/client.luau.md)
@@ -33,6 +34,7 @@ The following formats are available:
 - [server.lua](/api/formats/server.lua.md)
 - [server.luau](/api/formats/server.luau.md)
 - [txt](/api/formats/txt.md)
+<!-- /REGION:formats -->
 
 </div>
 
