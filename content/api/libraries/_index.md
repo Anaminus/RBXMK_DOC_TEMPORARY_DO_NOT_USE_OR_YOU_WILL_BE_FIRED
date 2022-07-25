@@ -16,23 +16,25 @@ The following libraries are available:
 
 <div class="api-list one">
 
-Library                                | Description
----------------------------------------|------------
-[base](api/libraries/base)             | The Lua 5.1 standard library, abridged.
-[program](api/libraries/program)       | Values related to the running program.
-[rbxmk](api/libraries/rbxmk)           | An interface to the rbxmk engine, and the rbxmk environment.
-[roblox](api/libraries/roblox)         | An environment emulating the Roblox Lua API.
-[clipboard](api/libraries/clipboard)   | An interface to the clipboard.
-[fs](api/libraries/fs)                 | An interface to the file system.
-[http](api/libraries/http)             | An interface to network resources.
-[json](api/libraries/json)             | Operations for handling JSON data.
-[math](api/libraries/math)             | Extensions to the standard math library.
-[os](api/libraries/os)                 | Extensions to the standard os library.
-[path](api/libraries/path)             | File path manipulation.
+<!-- REGION:libraries -->
+Library | Description
+----|----
+[base](api/libraries/base) | The Lua 5.1 standard library, abridged.
+[program](api/libraries/program) | Values related to the running program.
+[rbxmk](api/libraries/rbxmk) | An interface to the rbxmk engine, and the rbxmk environment.
+[roblox](api/libraries/roblox) | An environment emulating the Roblox Lua API.
+[clipboard](api/libraries/clipboard) | An interface to the clipboard.
+[fs](api/libraries/fs) | An interface to the file system.
+[http](api/libraries/http) | An interface to network resources.
+[json](api/libraries/json) | Operations for handling JSON data.
+[math](api/libraries/math) | Extensions to the standard math library.
+[os](api/libraries/os) | Extensions to the standard os library.
+[path](api/libraries/path) | File path manipulation.
 [rbxassetid](api/libraries/rbxassetid) | An interface to Roblox assets.
-[string](api/libraries/string)         | Extensions to the standard string library.
-[sym](api/libraries/sym)               | Symbols for accessing instance metadata.
-[table](api/libraries/table)           | Extensions to the standard table library.
+[string](api/libraries/string) | Extensions to the standard string library.
+[sym](api/libraries/sym) | Symbols for accessing instance metadata.
+[table](api/libraries/table) | Extensions to the standard table library.
+<!-- /REGION:libraries -->
 
 </div>
 
