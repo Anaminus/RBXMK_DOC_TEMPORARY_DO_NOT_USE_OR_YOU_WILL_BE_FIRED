@@ -5,6 +5,7 @@ description = "Type reference."
 +++
 
 <div class="flexzone">
+<!-- REGION:types -->
 <div>
 
 # Roblox types
@@ -99,4 +100,5 @@ description = "Type reference."
 - [table](api/types/table)
 
 </div>
+<!-- /REGION:types -->
 </div>
