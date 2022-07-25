@@ -81,13 +81,13 @@ description = "Type reference."
 <div>
 
 # Primitive types
-- [Number](/api/types/Number)
 - [bool](/api/types/bool)
 - [double](/api/types/double)
 - [float](/api/types/float)
 - [int](/api/types/int)
 - [int64](/api/types/int64)
 - [nil](/api/types/nil)
+- [number](/api/types/number)
 - [string](/api/types/string)
 
 </div>

@@ -5,6 +5,6 @@ description = "no content for topic \"Types/JsonValue:Summary\""
 categories = ["API", "Type"]
 +++
 
-`type JsonValue = nil | bool | Number | string | Array | Dictionary`
+`type JsonValue = nil | bool | number | string | Array | Dictionary`
 
 no content for topic "Types/JsonValue:Description"

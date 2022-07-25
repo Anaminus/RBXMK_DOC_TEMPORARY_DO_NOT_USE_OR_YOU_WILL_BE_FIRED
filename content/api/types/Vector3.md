@@ -135,7 +135,7 @@ of the two operands are summed.
 The **div** operator returns a vector where each corresponding component
 of the two operands are divided.
 
- `Vector3 / Number -> Vector3`
+ `Vector3 / number -> Vector3`
 
 The **div** operator returns a vector where each component of the first
 operand is divided by the second operand.
@@ -154,7 +154,7 @@ corresponding component is equal.
 The **mul** operator returns a vector where each corresponding component
 of the two operands are multiplied.
 
- `Vector3 * Number -> Vector3`
+ `Vector3 * number -> Vector3`
 
 The **mul** operator returns a vector where each component of the first
 operand is multiplied by the second operand.

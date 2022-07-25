@@ -1,6 +1,6 @@
 +++
 weight = 1
-title = "Number"
+title = "number"
 description = "A numeric value."
 categories = ["API", "Type"]
 +++
