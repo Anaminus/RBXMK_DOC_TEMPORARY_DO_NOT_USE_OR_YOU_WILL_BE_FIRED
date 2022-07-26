@@ -1,7 +1,6 @@
 +++
-weight = 60
 title = "rbxmk vs Remodel"
-description = "Comparision of rbxmk and Remodel."
+description = "A comparision between the APIs of rbxmk and Remodel."
 +++
 
 [Remodel][remodel] is a tool similar to rbxmk. It also runs Lua scripts, and has
