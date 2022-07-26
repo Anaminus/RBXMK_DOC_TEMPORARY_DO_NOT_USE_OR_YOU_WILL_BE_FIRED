@@ -1,8 +1,16 @@
 +++
 weight = 1
 title = "script.luau"
-description = "no content for topic \"Formats/script.luau:Summary\""
+description = "Encodes Scripts."
 categories = ["API", "Format"]
 +++
 
-no content for topic "Formats/script.luau:Description"
+The **script.luau** format is a shortcut for decoding Luau code into a
+Script instance, where the content is assigned to the Source property.
+
+| Direction | Type | Description |
+| --- | --- | --- |
+| Decode | [Instance](/api/types/Instance) | A Script with a Source property. |
+| Encode | Stringable | Any string-like value. |
+
+This format has no options.

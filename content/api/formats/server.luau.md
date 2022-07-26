@@ -1,8 +1,15 @@
 +++
 weight = 1
 title = "server.luau"
-description = "no content for topic \"Formats/server.luau:Summary\""
+description = "Encodes Scripts."
 categories = ["API", "Format"]
 +++
 
-no content for topic "Formats/server.luau:Description"
+The **server.luau** format is an alias for [script.luau](/api/formats/script.luau).
+
+| Direction | Type | Description |
+| --- | --- | --- |
+| Decode | [Instance](/api/types/Instance) | A Script with a Source property. |
+| Encode | Stringable | Any string-like value. |
+
+This format has no options.
