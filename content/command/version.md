@@ -24,7 +24,7 @@ Format of the version output. Available formats are "text", "json".
 
 ## verbose
 
-`-v, --verbose count`
+`-v, --verbose`
 
 **Default:** `0`
 
