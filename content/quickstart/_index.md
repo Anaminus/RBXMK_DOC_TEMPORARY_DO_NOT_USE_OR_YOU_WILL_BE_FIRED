@@ -8,12 +8,6 @@ titleIcon = "fas fa-power-off"
 
 This page provides steps for quickly getting started with rbxmk.
 
-{{<alert type="info">}}
-
-Used to Remodel? check out the [comparison guide](overview/remodel).
-
-{{</alert>}}
-
 # Steps
 <p class="is-size-4 is-italic">Give a classic place a fresh look.</p>
 
