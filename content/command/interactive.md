@@ -72,7 +72,7 @@ Display stack traces when an error occurs.
 
 ## desc-file
 
-`--desc-file function`
+`--desc-file path`
 
 Include the file located at \`path\` as a global descriptor. May be specified
 any number of times. Multiple descriptors are merged in the order specified.
@@ -87,7 +87,7 @@ Download and start with the latest API dump as the global descriptor.
 
 ## desc-patch
 
-`--desc-patch function`
+`--desc-patch path`
 
 Include the file located at \`path\` as a patch to the global descriptor. May
 be specified any number of times. Multiple patches are applied in the order
@@ -95,7 +95,7 @@ specified.
 
 ## include-root
 
-`--include-root stringArray`
+`--include-root path`
 
 **Default:** `[]`
 
@@ -104,7 +104,7 @@ times.
 
 ## libraries
 
-`--libraries stringArray`
+`--libraries list`
 
 **Default:** `[]`
 

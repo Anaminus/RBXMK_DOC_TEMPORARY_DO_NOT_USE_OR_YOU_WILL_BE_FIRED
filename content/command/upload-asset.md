@@ -27,14 +27,14 @@ request. Such flags can be specified any number of times.
 
 ## cookie-var
 
-`--cookie-var function`
+`--cookie-var var`
 
 Append a cookie from environment variable \`var\`. The content is formatted as
 a number of Set-Cookie headers. Can be given any number of times.
 
 ## cookies-file
 
-`--cookies-file function`
+`--cookies-file path`
 
 Append cookies from the file located at \`path\`. The file is formatted as a
 number of [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
@@ -42,7 +42,7 @@ headers. Can be given any number of times.
 
 ## cookies-from
 
-`--cookies-from function`
+`--cookies-from location`
 
 Append cookies from a known \`location\`. See the documentation of [Cookie.from](/api/types/Cookie#from) for a list of locations. Can be given
 any number of times.
