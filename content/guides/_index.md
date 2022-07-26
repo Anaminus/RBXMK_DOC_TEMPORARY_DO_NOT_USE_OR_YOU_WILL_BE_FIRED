@@ -5,7 +5,7 @@ description = "Guides for specific tasks"
 titleIcon = "fas fa-map"
 +++
 
-This page contains guides for performing specific tasks with rbxmk.
+This page lists guides for specific tasks involving rbxmk.
 
 - [Set up command-line autocompletion](autocompletion)
 - [Generate a selene configuration file](selene)
