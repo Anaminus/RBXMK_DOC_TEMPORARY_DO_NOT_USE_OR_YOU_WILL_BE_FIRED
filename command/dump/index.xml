@@ -4,7 +4,7 @@ A fragment is a chunk of text that documents some particular element. Internally
 The following top-level directories are defined:</description></item><item><title>json</title><link>https://anaminus.github.io/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/command/dump/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://anaminus.github.io/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/command/dump/json/</guid><description>rbxmk dump json
 The json dump format describes the API of the Lua environment in JSON format.
 The top-level value is a JSON object. The Version field is a number that signals the structure of the JSON format, and will be present in all versions of the format.
-Run rbxmk doc &amp;quot;Commands/dump/json:Version 0&amp;quot; for a detailed description of the structure.
+Run rbxmk doc &amp;quot;Commands/dump/json:Structure&amp;quot; for a detailed description of the structure.
 Flags # indent # --indent string
 Default: &amp;quot;\t&amp;quot;
 Specifies the spacing used to indent the JSON output.</description></item><item><title>plugin</title><link>https://anaminus.github.io/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/command/dump/plugin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://anaminus.github.io/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/command/dump/plugin/</guid><description>rbxmk dump plugin FILE The plugin command enables the generation of a custom dump format. The command receives a file to be executed as a Lua script.
