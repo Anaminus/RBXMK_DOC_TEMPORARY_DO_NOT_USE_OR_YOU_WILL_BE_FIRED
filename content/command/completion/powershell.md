@@ -1,11 +1,19 @@
 +++
 weight = 1
 title = "powershell"
-description = "no content for topic \"Commands/completion/powershell:Summary\""
+description = "Generate autocompletion script for powershell."
 categories = ["Command", "Subcommand"]
 +++
 
-`rbxmk completion powershell no content for topic "Commands/completion/powershell:Arguments"
-`
+`rbxmk completion powershell`
 
-no content for topic "Commands/completion/powershell:Description"
+Generate the autocompletion script for powershell.
+
+To load completions in your current shell session:
+
+```powershell
+rbxmk completion powershell | Out-String | Invoke-Expression
+```
+
+To load completions for every new session, add the output of the above
+command to your powershell profile.

@@ -12,7 +12,7 @@ The following commands are available:
 <!-- REGION:commands -->
 Command | Description
 ----|----
-[completion](/command/completion) | no content for topic "Commands/completion:Summary"
+[completion](/command/completion) | Generate an autocompletion script.
 [doc](/command/doc) | Display API documentation.
 [download-asset](/command/download-asset) | Download an asset.
 [dump](/command/dump) | Dump the script API.
