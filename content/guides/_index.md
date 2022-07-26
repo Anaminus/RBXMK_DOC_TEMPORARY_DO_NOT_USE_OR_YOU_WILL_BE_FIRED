@@ -7,5 +7,4 @@ titleIcon = "fas fa-map"
 
 This page lists guides for specific tasks involving rbxmk.
 
-- [Set up command-line autocompletion](autocompletion)
-- [Generate a selene configuration file](selene)
+{{<taxcards category="guide">}}

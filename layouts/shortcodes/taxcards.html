@@ -1,0 +1,20 @@
+<div class="column-cards">
+  {{$category := .Get "category"}}
+  {{range $key, $value := (default (index $.Site.Taxonomies "categories" $category) (index $.Site.Taxonomies "categories" $category))}}
+    <article class='message'>
+      <div class='message-header'>
+        {{$value.LinkTitle}}
+      </div>
+      <div class='message-body'>
+        <p>
+          {{with $value.Description}}
+            {{.}}
+          {{else}}
+            {{i18n "empty_description"}}
+          {{end}}
+        </p>
+        <a class='is-pretty-link' href='{{.Permalink}}'>...{{i18n "read_more"}}</a>
+      </div>
+    </article>
+  {{end}}
+</div>

@@ -54,6 +54,12 @@
 .column-list > :is(ul,ol) {
 	 columns: auto 30ch;
 }
+.column-cards {
+	 columns: 3 40ch;
+}
+.column-cards > * {
+	 break-inside: avoid;
+}
 .typedef {
 	padding: 0;
 }
