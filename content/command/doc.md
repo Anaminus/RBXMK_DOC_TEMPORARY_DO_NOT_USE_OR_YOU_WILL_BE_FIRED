@@ -52,7 +52,7 @@ The following top-level topics are available:
 
 `--export`
 
-**Default:** `"false"`
+**Default:** `false`
 
 Ensure that content is formatted for output, rather than for display in the
 terminal. Applies to the "terminal" format.
@@ -70,7 +70,7 @@ Sets the output format of the produced fragment. Available formats are
 
 `-l, --list`
 
-**Default:** `"false"`
+**Default:** `false`
 
 Returns a list of sub-topics and sub-sections for the given reference. If no
 reference is specified, then all top-level topics are listed.
@@ -85,7 +85,7 @@ query that item.
 
 `-r, --recursive`
 
-**Default:** `"false"`
+**Default:** `false`
 
 List references recursively. Implies --list.
 
@@ -93,7 +93,7 @@ List references recursively. Implies --list.
 
 `-w, --width int`
 
-**Default:** `"0"`
+**Default:** `0`
 
 When possible, render formatted fragments with the given width, wrapping text
 around. If 0, then no wrapping is applied. If less than 0, then the width is

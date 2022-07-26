@@ -26,7 +26,7 @@ Format of the version output. Available formats are "text", "json".
 
 `-v, --verbose count`
 
-**Default:** `"0"`
+**Default:** `0`
 
 Increase verbosity level by 1 for each time the flag is specified. Default is
 level 0. Each level appends the following information:

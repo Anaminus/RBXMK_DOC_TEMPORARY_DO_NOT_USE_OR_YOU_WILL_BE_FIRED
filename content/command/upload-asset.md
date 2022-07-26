@@ -65,6 +65,6 @@ The format to encode the asset as.
 
 `--id int64`
 
-**Default:** `"0"`
+**Default:** `0`
 
 The ID of the asset to download (required).
