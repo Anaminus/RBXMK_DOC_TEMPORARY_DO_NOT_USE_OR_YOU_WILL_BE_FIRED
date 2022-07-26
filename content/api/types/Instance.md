@@ -283,7 +283,7 @@ This function uses the instance's [sym.AttrConfig](/api/types/Instance#symattrco
 to decode from, which is expected to be string-like. An error is thrown if the
 data could not be decoded.
 
-See the [rbxattr format](/api/formats/rbxattr) for a list of possible
+See the [rbxattr format](/api/formats/rbxattr.md) for a list of possible
 attribute value types.
 
 The [Attributes](README.md#user-content-attributes) section
@@ -300,7 +300,7 @@ This function uses the instance's [sym.AttrConfig](/api/types/Instance#symattrco
 to decode from, which is expected to be string-like. An error is thrown if the
 data could not be decoded.
 
-See the [rbxattr format](/api/formats/rbxattr) for a list of possible
+See the [rbxattr format](/api/formats/rbxattr.md) for a list of possible
 attribute value types.
 
 The [Attributes](README.md#user-content-attributes) section
@@ -360,7 +360,7 @@ to decode from, which is expected to be string-like. This function decodes the
 serialized attributes, sets the given value, then re-encodes the attributes. An
 error is thrown if the data could not be decoded or encoded.
 
-See the [rbxattr format](/api/formats/rbxattr) for a list of possible
+See the [rbxattr format](/api/formats/rbxattr.md) for a list of possible
 attribute value types.
 
 The [Attributes](README.md#user-content-attributes) section
@@ -376,7 +376,7 @@ The **SetAttributes** method replaces all attributes with the content of
 This function uses the instance's [sym.AttrConfig](/api/types/Instance#symattrconfig) to select the property
 to encode to. An error is thrown if the data could not be encoded.
 
-See the [rbxattr format](/api/formats/rbxattr) for a list of possible
+See the [rbxattr format](/api/formats/rbxattr.md) for a list of possible
 attribute value types.
 
 The [Attributes](README.md#user-content-attributes) section

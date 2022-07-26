@@ -9,7 +9,7 @@ The **DescAction** type describes a single action that transforms a
 descriptor.
 
 A DescAction can be created with the [DescAction.new](/api/types/DescAction#new) constructor. It is also returned
-from the [Desc.Diff](/api/types/Desc#diff) method and the [desc-patch.json](/api/formats/desc-patch.json) format.
+from the [Desc.Diff](/api/types/Desc#diff) method and the [desc-patch.json](/api/formats/desc-patch.json.md) format.
 
 # Overview
 

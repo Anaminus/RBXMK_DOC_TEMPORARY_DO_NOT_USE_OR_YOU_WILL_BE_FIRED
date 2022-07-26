@@ -5,7 +5,7 @@ description = "Encodes Scripts."
 categories = ["API", "Format"]
 +++
 
-The **server.lua** format is an alias for [script.lua](/api/formats/script.lua).
+The **server.lua** format is an alias for [script.lua](/api/formats/script.lua.md).
 
 | Direction | Type | Description |
 | --- | --- | --- |

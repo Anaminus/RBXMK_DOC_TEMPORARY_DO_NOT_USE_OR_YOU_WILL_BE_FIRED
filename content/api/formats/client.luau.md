@@ -6,7 +6,7 @@ categories = ["API", "Format"]
 +++
 
 The **client.luau** format is an alias for
-[localscript.luau](/api/formats/localscript.luau).
+[localscript.luau](/api/formats/localscript.luau.md).
 
 | Direction | Type | Description |
 | --- | --- | --- |

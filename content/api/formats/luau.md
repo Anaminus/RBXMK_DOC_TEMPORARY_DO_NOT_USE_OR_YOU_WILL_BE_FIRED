@@ -6,7 +6,7 @@ categories = ["API", "Format"]
 +++
 
 The **lua** format is an alias for
-[modulescript.lua](/api/formats/modulescript.lua).
+[modulescript.lua](/api/formats/modulescript.lua.md).
 
 | Direction | Type | Description |
 | --- | --- | --- |
