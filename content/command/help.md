@@ -10,3 +10,15 @@ categories = ["Command"]
 
 The **help** command displays help for a command, or general help if no
 command is given.
+
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.

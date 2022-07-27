@@ -29,3 +29,15 @@ complete list of all fragments, use the following command:
 ```
 rbxmk doc --recursive
 ```
+
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.

@@ -33,3 +33,23 @@ rbxmk completion bash > /usr/local/etc/bash_completion.d/rbxmk
 ```
 
 You will need to start a new shell for this setup to take effect.
+
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
+## no-descriptions
+
+`--no-descriptions`
+
+**Default:** `false`
+
+Disables completion descriptions.

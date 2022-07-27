@@ -55,3 +55,15 @@ includes only the following libraries:
 - math
 - string
 - table
+
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.

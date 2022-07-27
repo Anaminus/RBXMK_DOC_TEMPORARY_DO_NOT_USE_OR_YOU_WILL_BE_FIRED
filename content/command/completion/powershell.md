@@ -17,3 +17,23 @@ rbxmk completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above
 command to your powershell profile.
+
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
+## no-descriptions
+
+`--no-descriptions`
+
+**Default:** `false`
+
+Disables completion descriptions.

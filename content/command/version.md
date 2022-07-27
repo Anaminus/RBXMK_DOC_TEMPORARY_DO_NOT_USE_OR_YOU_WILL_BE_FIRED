@@ -22,6 +22,14 @@ is formatted according to [semantic versioning](https://semver.org/).
 
 Format of the version output. Available formats are "text", "json".
 
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 ## verbose
 
 `-v, --verbose`

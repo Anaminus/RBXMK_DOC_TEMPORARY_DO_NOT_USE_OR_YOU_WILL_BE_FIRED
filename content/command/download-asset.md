@@ -60,6 +60,14 @@ The format to encode the file as. Defaults to --format.
 
 The format to decode the asset as.
 
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 ## id
 
 `--id int64`

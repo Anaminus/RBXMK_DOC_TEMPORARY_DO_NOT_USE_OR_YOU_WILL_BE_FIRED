@@ -11,6 +11,18 @@ categories = ["Command"]
 The **dump** command dumps the API of the rbxmk Lua environment in a
 specified format.
 
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 # Subcommands
 
 ----

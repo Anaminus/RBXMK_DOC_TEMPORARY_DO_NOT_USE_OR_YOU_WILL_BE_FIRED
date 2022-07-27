@@ -93,6 +93,14 @@ Include the file located at \`path\` as a patch to the global descriptor. May
 be specified any number of times. Multiple patches are applied in the order
 specified.
 
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 ## include-root
 
 `--include-root path`

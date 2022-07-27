@@ -21,6 +21,14 @@ description of the structure.
 
 ----
 
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 ## indent
 
 `--indent string`

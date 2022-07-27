@@ -66,6 +66,14 @@ terminal. Applies to the "terminal" format.
 Sets the output format of the produced fragment. Available formats are
 "terminal", "html".
 
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 ## list
 
 `-l, --list`

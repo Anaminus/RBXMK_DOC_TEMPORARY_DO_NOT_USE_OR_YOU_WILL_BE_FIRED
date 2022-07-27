@@ -10,3 +10,15 @@ categories = ["Command", "Subcommand"]
 The **selene** dump format produces a TOML-formatted configuration file
 for the [selene](https://kampfkarren.github.io/selene/) linter that
 lints the rbxmk Lua environment.
+
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.

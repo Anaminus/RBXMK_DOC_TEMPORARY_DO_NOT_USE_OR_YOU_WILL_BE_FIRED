@@ -11,6 +11,18 @@ The **completion** command generates autocompletion scripts for the
 program. Each sub-command generates a script for a specific shell. See each
 sub-command's help for details on how to use the generated script.
 
+# Flags
+
+----
+
+## help
+
+`-h, --help`
+
+**Default:** `false`
+
+Displays help for the command.
+
 # Subcommands
 
 ----
