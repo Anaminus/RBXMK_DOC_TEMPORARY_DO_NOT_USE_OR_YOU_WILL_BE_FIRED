@@ -75,8 +75,20 @@ fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
+| Options | object? | The options of the format. Maps an option name to a FormatOption object. |
 | Summary | string? | A fragment reference to a short summary of the format. |
 | Description | string? | A fragment reference to a detailed description of the format. |
+
+## FormatOption
+
+A **FormatOption** is an object that describes an option of a format. It
+has the following fields:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| Type | object | A Type object that describes the value type of the option. |
+| Default | string | A string describing the default value of the option. |
+| Description | string? | A fragment reference to a description of the option. |
 
 ## Struct
 
