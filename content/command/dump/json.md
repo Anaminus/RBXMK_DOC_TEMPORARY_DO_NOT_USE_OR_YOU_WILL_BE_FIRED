@@ -190,6 +190,7 @@ following fields:
 | --- | --- | --- |
 | Type | string | Indicates the value type of the flag. |
 | Default | string? | Indicates the default value for the flag. |
+| Persistent | bool? | Indicates whether the flag is inherited by subcommands. |
 | Deprecated | string? | Indicates whether the flag is deprecated, and if so, the new flag to use. |
 | Hidden | bool? | Indicates whether the flag is hidden. |
 | Shorthand | string? | Indicates a one-letter abbreviation for the flag. |
