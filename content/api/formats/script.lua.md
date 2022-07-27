@@ -12,5 +12,3 @@ Script instance, where the content is assigned to the Source property.
 | --- | --- | --- |
 | Decode | [Instance](/api/types/Instance) | A Script with a Source property. |
 | Encode | Stringable | Any string-like value. |
-
-This format has no options.

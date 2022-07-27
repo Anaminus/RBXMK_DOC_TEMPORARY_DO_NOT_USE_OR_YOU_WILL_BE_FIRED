@@ -13,8 +13,15 @@ by [RFC 6902](https://datatracker.ietf.org/doc/html/rfc6902/).
 | Decode | JsonPatch | List of JsonOperation values. |
 | Encode | JsonPatch | List of JsonOperation values. |
 
-This format has the following options:
+# Options
 
-| Field | Type | Default | Description |
-| --- | --- | --- | --- |
-| Indent | string | `"\t"` | Determines the indentation of encoded content. If an empty string, then the content is minified. |
+----
+
+## Indent
+
+**Type:** `string`
+
+**Default:** `"\t"`
+
+Determines the indentation of encoded content. If an empty string, then the
+content is minified.

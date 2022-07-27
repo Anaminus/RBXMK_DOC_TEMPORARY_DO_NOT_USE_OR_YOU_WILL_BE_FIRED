@@ -12,5 +12,3 @@ known as an "API dump", in JSON format.
 | --- | --- | --- |
 | Decode | [Desc](/api/types/Desc) | A root descriptor. |
 | Encode | [Desc](/api/types/Desc) | A root descriptor. |
-
-This format has no options.

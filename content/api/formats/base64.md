@@ -12,8 +12,15 @@ The **base64** format is defined for encoding strings in the [Base64](https://en
 | Decode | BinaryString | Raw binary data. |
 | Encode | Stringable | Any string-like value. |
 
-This format has the following options:
+# Options
 
-| Field | Type | Default | Description |
-| --- | --- | --- | --- |
-| Width | string | `0` | Causes the encoded result to be wrapped to the given number of characters. Does not wrap if the width is less than 1. |
+----
+
+## Width
+
+**Type:** `int`
+
+**Default:** `0`
+
+Causes the encoded result to be wrapped to the given number of characters.
+Does not wrap if the width is less than 1.

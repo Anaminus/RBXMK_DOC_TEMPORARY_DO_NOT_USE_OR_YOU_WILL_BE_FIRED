@@ -37,5 +37,3 @@ When encoding, each field must be string-like, but cannot be an Instance.
 
 When decoding, each record must have the same number of fields. When
 encoding, records do not need to have the same number of fields.
-
-This format has no options.

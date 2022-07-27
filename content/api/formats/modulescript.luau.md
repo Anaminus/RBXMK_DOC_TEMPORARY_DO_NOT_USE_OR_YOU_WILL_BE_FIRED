@@ -13,5 +13,3 @@ property.
 | --- | --- | --- |
 | Decode | [Instance](/api/types/Instance) | A ModuleScript with a Source property. |
 | Encode | Stringable | Any string-like value. |
-
-This format has no options.

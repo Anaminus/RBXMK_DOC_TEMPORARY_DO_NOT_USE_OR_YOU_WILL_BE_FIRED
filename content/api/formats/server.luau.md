@@ -11,5 +11,3 @@ The **server.luau** format is an alias for [script.luau](/api/formats/script.lua
 | --- | --- | --- |
 | Decode | [Instance](/api/types/Instance) | A Script with a Source property. |
 | Encode | Stringable | Any string-like value. |
-
-This format has no options.

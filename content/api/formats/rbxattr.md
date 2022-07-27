@@ -33,5 +33,3 @@ The following value types are encoded and decoded:
 
 Additionally, any Stringable value is encoded as a string, and any Numberable
 value is encoded as a double.
-
-This format has no options.

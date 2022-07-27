@@ -12,5 +12,3 @@ bytes will be interpreted exactly as-is.
 | --- | --- | --- |
 | Decode | BinaryString | Raw binary data. |
 | Encode | Stringable | Any string-like value. |
-
-This format has no options.

@@ -12,5 +12,3 @@ The **client.lua** format is an alias for
 | --- | --- | --- |
 | Decode | [Instance](/api/types/Instance) | A LocalScript with a Source property. |
 | Encode | Stringable | Any string-like value. |
-
-This format has no options.

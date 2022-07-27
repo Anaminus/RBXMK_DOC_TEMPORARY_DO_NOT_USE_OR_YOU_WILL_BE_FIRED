@@ -12,5 +12,3 @@ in JSON format.
 | --- | --- | --- |
 | Decode | DescActions | A list of [DescAction](/api/types/DescAction) values. |
 | Encode | DescActions | A list of [DescAction](/api/types/DescAction) values. |
-
-This format has no options.

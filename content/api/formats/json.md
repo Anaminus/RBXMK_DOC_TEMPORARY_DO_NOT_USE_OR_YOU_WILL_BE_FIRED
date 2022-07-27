@@ -25,8 +25,15 @@ format.
 
 Other value types are encoded as null.
 
-This format has the following options:
+# Options
 
-| Field | Type | Default | Description |
-| --- | --- | --- | --- |
-| Indent | string | `"\t"` | Determines the indentation of encoded content. If an empty string, then the content is minified. |
+----
+
+## Indent
+
+**Type:** `string`
+
+**Default:** `"\t"`
+
+Determines the indentation of encoded content. If an empty string, then the
+content is minified.
