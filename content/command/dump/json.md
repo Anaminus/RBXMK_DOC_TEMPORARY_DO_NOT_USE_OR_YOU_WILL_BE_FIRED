@@ -48,6 +48,7 @@ The following top-level fields are specified:
 
 | Fields | Type | Description |
 | --- | --- | --- |
+| Version | number | Reserved for indicating different versions of the structure. Always 0. |
 | Libraries | array | A list of libraries available in the Lua environment. Each element is a Library object. |
 | Types | object? | A collection of globally defined data types. Maps a type name to a TypeDef object. |
 | Enums | object? | A collection of globally defined enums. Maps an enum name to an Enum object. |
