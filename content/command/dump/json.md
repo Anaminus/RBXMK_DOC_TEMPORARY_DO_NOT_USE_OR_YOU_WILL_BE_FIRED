@@ -49,11 +49,11 @@ The following top-level fields are specified:
 | Fields | Type | Description |
 | --- | --- | --- |
 | Version | number | Reserved for indicating different versions of the structure. Always 0. |
-| Libraries | array | A list of libraries available in the Lua environment. Each element is a Library object. |
-| Types | object? | A collection of globally defined data types. Maps a type name to a TypeDef object. |
-| Enums | object? | A collection of globally defined enums. Maps an enum name to an Enum object. |
-| Formats | object | A collection of globally defined formats. Maps a type name to a Format object. |
-| Program | object | A Command object describing the top-level program command. |
+| Libraries | array | A list of libraries available in the Lua environment. Each element is a [Library](#library) object. |
+| Types | object? | A collection of globally defined data types. Maps a type name to a [TypeDef](#typedef) object. |
+| Enums | object? | A collection of globally defined enums. Maps an enum name to an [Enum](#enum) object. |
+| Formats | object | A collection of globally defined formats. Maps a type name to a [Format](#format) object. |
+| Program | object | A [Command](#command) object describing the top-level program command. |
 
 ## Library
 
@@ -65,9 +65,9 @@ fields:
 | Name | string | The name of the library. |
 | ImportedAs | string | The name the library is imported under. If empty, then the library is merged into the global environment. |
 | Priority | int | The priority that determines the order in which the library is loaded. Libraries are loaded by ascending priority. |
-| Struct | object? | A Struct object that describes the contents of the library. |
-| Types | object? | A collection of data types defined by the library. Maps a type name to a TypeDef object. |
-| Enums | object? | A collection of enums defined by the library. Maps an enum name to an Enum object. |
+| Struct | object? | A [Struct](#struct) object that describes the contents of the library. |
+| Types | object? | A collection of data types defined by the library. Maps a type name to a [TypeDef](#typedef) object. |
+| Enums | object? | A collection of enums defined by the library. Maps an enum name to an [Enum](#enum) object. |
 
 ## Format
 
@@ -76,7 +76,7 @@ fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Options | object? | The options of the format. Maps an option name to a FormatOption object. |
+| Options | object? | The options of the format. Maps an option name to a [FormatOption](#formatoption) object. |
 | Summary | string? | A fragment reference to a short summary of the format. |
 | Description | string? | A fragment reference to a detailed description of the format. |
 
@@ -87,7 +87,7 @@ has the following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Type | object | A Type object that describes the value type of the option. |
+| Type | object | A [Type](#type) object that describes the value type of the option. |
 | Default | string | A string describing the default value of the option. |
 | Description | string? | A fragment reference to a description of the option. |
 
@@ -98,7 +98,7 @@ number of constant fields. It has the following fields.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Fields | object | The fields of the structure. Maps a field name to a Field object. |
+| Fields | object | The fields of the structure. Maps a field name to a [Field](#field) object. |
 | Summary | string? | A fragment reference to a short summary of the structure. |
 | Description | string? | A fragment reference to a detailed description of the structure. |
 
@@ -116,16 +116,16 @@ The following values are possible for the Kind field:
 
 | Kind | Value type | Description |
 | --- | --- | --- |
-| Function | object | Describes a function. Value is a Function object. |
-| MultiFunction | array | Describes a function with multiple signatures. Each element is a Function object. |
-| Property | object | Describes a property. Value is a Property object. |
-| Struct | object | Describes a struct. Value is a Struct object. |
+| Function | object | Describes a function. Value is a [Function](#function) object. |
+| MultiFunction | array | Describes a function with multiple signatures. Each element is a [Function](#function) object. |
+| Property | object | Describes a property. Value is a [Property](#property) object. |
+| Struct | object | Describes a struct. Value is a [Struct](#struct) object. |
 
 ## Property
 
 | Field | Type | Description |
 | --- | --- | --- |
-| ValueType | object | A Type object that describes the value type of the property. |
+| ValueType | object | A [Type](#type) object that describes the value type of the property. |
 | ReadOnly | bool? | Whether the property can be written. |
 | Summary | string? | A fragment reference to a short summary of the property. |
 | Description | string? | A fragment reference to a detailed description of the property. |
@@ -137,8 +137,8 @@ following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Parameters | array | Describes the values received by the function. Each element is a Parameter object. |
-| Returns | array | Describes the values returned by the function. Each element is a Parameter object. |
+| Parameters | array | Describes the values received by the function. Each element is a [Parameter](#parameter) object. |
+| Returns | array | Describes the values returned by the function. Each element is a [Parameter](#parameter) object. |
 | CanError | bool? | Whether the function may throw an error, excluding type errors from received arguments. |
 | Summary | string? | A fragment reference to a short summary of the function. |
 | Description | string? | A fragment reference to a detailed description of the function. |
@@ -151,13 +151,13 @@ following fields:
 | Field | Type | Description |
 | --- | --- | --- |
 | Category | string? | Describes the category of the type. |
-| Underlying | object? | A Type object that describes the underlying type, if any. |
-| Operators | object? | An Operators object that describes the operators defined on the type. |
-| Properties | object? | Describes the properties defined on the type. Maps a property name to a Property object. |
-| Symbols | object? | Describes the symbols defined on the type. Maps a symbol name to a Property object. |
-| Methods | object? | Describes the methods defined on the type. Maps a method name to a Function object. |
-| Constructors | object? | Describes constructor functions that create the type. Maps a constructor name to an array of Function objects. |
-| Enums | object? | Describes enums related to the type. Maps an enum name to an Enum object. |
+| Underlying | object? | A [Type](#type) object that describes the underlying type, if any. |
+| Operators | object? | An [Operators](#operators) object that describes the operators defined on the type. |
+| Properties | object? | Describes the properties defined on the type. Maps a property name to a [Property](#property) object. |
+| Symbols | object? | Describes the symbols defined on the type. Maps a symbol name to a [Property](#property) object. |
+| Methods | object? | Describes the methods defined on the type. Maps a method name to a [Function](#function) object. |
+| Constructors | object? | Describes constructor functions that create the type. Maps a constructor name to an array of [Function](#function) objects. |
+| Enums | object? | Describes enums related to the type. Maps an enum name to an [Enum](#enum) object. |
 | Summary | string | A fragment reference pointing to a short summary of the type. |
 | Description | string | A fragment reference pointing to a detailed description of the type. |
 
@@ -167,7 +167,7 @@ An **Enum** object describes an enum. It has the following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Items | object | Describes the items of the enum. Maps an item name to an EnumItem object. |
+| Items | object | Describes the items of the enum. Maps an item name to an [EnumItem](#enumitem) object. |
 | Summary | string | A fragment reference pointing to a short summary of the enum. |
 | Description | string | A fragment reference pointing to a detailed description of the enum. |
 
@@ -191,8 +191,8 @@ fields:
 | --- | --- | --- |
 | Summary | string? | A fragment reference pointing to a short summary of the command. |
 | Description | string? | A fragment reference pointing to a detailed description of the command. |
-| Flags | object? | Describes the flags of the command. Maps a flag name to a Flag object. |
-| Commands | object? | Describes the sub-commands of the command. Maps a command name to a Command object. |
+| Flags | object? | Describes the flags of the command. Maps a flag name to a [Flag](#flag) object. |
+| Commands | object? | Describes the sub-commands of the command. Maps a command name to a [Command](#command) object. |
 
 ## Flag
 
@@ -217,7 +217,7 @@ A **Parameter** object describes the parameter of a function.
 | Field | Type | Description |
 | --- | --- | --- |
 | Name | string? | The name of the parameter. |
-| Type | object | A Type object that describes the type of the parameter. |
+| Type | object | A [Type](#type) object that describes the type of the parameter. |
 | Default | string? | The default value if the type is optional. Always omitted for return values. |
 | Enums | array? | Literal values that can be passed to the parameter. Each element is a string. |
 
@@ -248,8 +248,8 @@ following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Parameters | array | The values received by the function. Each element is a Parameter object. |
-| Returns | array | The values returned by the function. Each element is a Parameter object. |
+| Parameters | array | The values received by the function. Each element is a [Parameter](#parameter) object. |
+| Returns | array | The values returned by the function. Each element is a [Parameter](#parameter) object. |
 
 ### array
 
@@ -258,7 +258,7 @@ type. It has the following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Type | object | A Type object indicating each element of the array. |
+| Type | object | A [Type](#type) object indicating each element of the array. |
 
 ### or
 
@@ -267,7 +267,7 @@ following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Types | array | An array of Type objects. |
+| Types | array | An array of [Type](#type) objects. |
 
 ### optional
 
@@ -276,7 +276,7 @@ following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Type | object | A Type object indicating the underlying type. |
+| Type | object | A [Type](#type) object indicating the underlying type. |
 
 ### group
 
@@ -285,7 +285,7 @@ additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Type | object | A Type object indicating the underlying type. |
+| Type | object | A [Type](#type) object indicating the underlying type. |
 
 ### struct
 
@@ -294,7 +294,7 @@ has the following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Fields | object | The fields of the struct. Maps a field name to a Type object. |
+| Fields | object | The fields of the struct. Maps a field name to a [Type](#type) object. |
 
 ### map
 
@@ -303,8 +303,8 @@ value. It has the following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Key | object | A Type object indicating the type of each key. |
-| Value | object | A Type object indicating the type of each value. |
+| Key | object | A [Type](#type) object indicating the type of each key. |
+| Value | object | A [Type](#type) object indicating the type of each value. |
 
 ### dictionary
 
@@ -313,7 +313,7 @@ to a value. It has the following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Value | object | A Type object indicating the type of each value. |
+| Value | object | A [Type](#type) object indicating the type of each value. |
 
 ### table
 
@@ -322,9 +322,9 @@ part. It has the following additional fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Key | object | A Type object indicating the type of each key. |
-| Value | object | A Type object indicating the type of each value. |
-| Fields | object | The fields of the table. Maps a field name to a Type object. |
+| Key | object | A [Type](#type) object indicating the type of each key. |
+| Value | object | A [Type](#type) object indicating the type of each value. |
+| Fields | object | The fields of the table. Maps a field name to a [Type](#type) object. |
 
 ### functions
 
@@ -338,21 +338,21 @@ following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Add | array | An array of Binop objects that describes signatures for the \_\_add operator. |
-| Sub | array | An array of Binop objects that describes signatures for the \_\_sub operator. |
-| Mul | array | An array of Binop objects that describes signatures for the \_\_mul operator. |
-| Div | array | An array of Binop objects that describes signatures for the \_\_div operator. |
-| Mod | array | An array of Binop objects that describes signatures for the \_\_mod operator. |
-| Pow | array | An array of Binop objects that describes signatures for the \_\_pow operator. |
-| Concat | array | An array of Binop objects that describes signatures for the \_\_concat operator. |
-| Eq | object? | A Cmpop object that describes the signature for the \_\_eq operator, if defined. |
-| Le | object? | A Cmpop object that describes the signature for the \_\_le operator, if defined. |
-| Lt | object? | A Cmpop object that describes the signature for the \_\_lt operator, if defined. |
-| Len | object? | A Unop object that describes the signature for the \_\_len operator, if defined. |
-| Unm | object? | A Unop object that describes the signature for the \_\_unm operator, if defined. |
-| Call | object? | A Function object that describes the signature for the \_\_call operator, if defined. |
-| Index | object? | A Function object that describes the signature for the \_\_index operator, if defined. |
-| Newindex | object? | A Function object that describes the signature for the \_\_newindex operator, if defined. |
+| Add | array | An array of [Binop](#binop) objects that describes signatures for the \_\_add operator. |
+| Sub | array | An array of [Binop](#binop) objects that describes signatures for the \_\_sub operator. |
+| Mul | array | An array of [Binop](#binop) objects that describes signatures for the \_\_mul operator. |
+| Div | array | An array of [Binop](#binop) objects that describes signatures for the \_\_div operator. |
+| Mod | array | An array of [Binop](#binop) objects that describes signatures for the \_\_mod operator. |
+| Pow | array | An array of [Binop](#binop) objects that describes signatures for the \_\_pow operator. |
+| Concat | array | An array of [Binop](#binop) objects that describes signatures for the \_\_concat operator. |
+| Eq | object? | A [Cmpop](#cmpop) object that describes the signature for the \_\_eq operator, if defined. |
+| Le | object? | A [Cmpop](#cmpop) object that describes the signature for the \_\_le operator, if defined. |
+| Lt | object? | A [Cmpop](#cmpop) object that describes the signature for the \_\_lt operator, if defined. |
+| Len | object? | A [Unop](#unop) object that describes the signature for the \_\_len operator, if defined. |
+| Unm | object? | A [Unop](#unop) object that describes the signature for the \_\_unm operator, if defined. |
+| Call | object? | A [Function](#function) object that describes the signature for the \_\_call operator, if defined. |
+| Index | object? | A [Function](#function) object that describes the signature for the \_\_index operator, if defined. |
+| Newindex | object? | A [Function](#function) object that describes the signature for the \_\_newindex operator, if defined. |
 
 ## Binop
 
@@ -361,8 +361,8 @@ fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Operand | object | The type of the right operand. |
-| Result | object | The type of the result of the operation. |
+| Operand | object | The [Type](#type) of the right operand. |
+| Result | object | The [Type](#type) of the result of the operation. |
 | Summary | string? | A fragment reference pointing to a short summary of the operator. |
 | Description | string? | A fragment reference pointing to a detailed description of the operator. |
 
@@ -382,6 +382,6 @@ A **Unop** object describes a unary operator.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Result | object | The type of the result of the operation. |
+| Result | object | The [Type](#type) of the result of the operation. |
 | Summary | string? | A fragment reference pointing to a short summary of the operator. |
 | Description | string? | A fragment reference pointing to a detailed description of the operator. |
