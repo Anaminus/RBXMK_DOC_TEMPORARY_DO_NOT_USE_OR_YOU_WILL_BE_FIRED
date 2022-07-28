@@ -51,8 +51,6 @@ The following top-level fields are specified:
 | Enums | object? | A collection of globally defined enums. Maps an enum name to an Enum object. |
 | Formats | object | A collection of globally defined formats. Maps a type name to a Format object. |
 | Program | object | A Command object describing the top-level program command. |
-| Fragments | array | A list of additional fragment references. Each element is a string. |
-| Description | string? | A fragment reference to a description of the Lua API overall. |
 
 ## Library
 
