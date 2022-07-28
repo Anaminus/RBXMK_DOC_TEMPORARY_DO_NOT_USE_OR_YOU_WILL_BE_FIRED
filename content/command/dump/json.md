@@ -42,6 +42,8 @@ be minified (use --indent="" to specify an empty string).
 
 ----
 
+## Root
+
 The following top-level fields are specified:
 
 | Fields | Type | Description |
