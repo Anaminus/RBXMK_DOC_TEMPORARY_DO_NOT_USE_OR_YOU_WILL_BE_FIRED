@@ -223,83 +223,71 @@ A **Parameter** object describes the parameter of a function.
 
 ## Type
 
-A **Type** object describes the type of a value. It has the following
-fields.
+A **Type** object describes the type of a value. It has the
+`Sig` field, which is a string-representation of the type formatted
+as a Luau type definition.
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Sig | string | A string-representation of the type, in Luau type definition format. |
-| Kind | string | Indicates the remaining fields. |
-| ... | ... | Additional fields indicated by the Kind field. |
+The object has exactly one additional field, where the key indicates the kind
+of type, and the value describes the kind. The following fields are
+possible:
 
 ### primitive
 
-The **primitive** kind describes a primitive value. It has the following
-additional fields:
+**Type:** string
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Type | string | The name of the type. |
+The **primitive** kind indicates the type of a primitive value.
 
 ### function
 
+**Type:** object
+
 The **function** kind describes the signature of a function. It has the
-following additional fields:
+following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Parameters | array | The values received by the function. Each element is a [Parameter](#parameter) object. |
-| Returns | array | The values returned by the function. Each element is a [Parameter](#parameter) object. |
+| Parameters | array? | The values received by the function. Each element is a [Parameter](#parameter) object. If unspecified, the function has no parameters. |
+| Returns | array? | The values returned by the function. Each element is a [Parameter](#parameter) object. If unspecified, the function returns no values. |
 
 ### array
 
-The **array** kind describes an array of elements, each with a single
-type. It has the following additional fields:
+**Type:** [Type](#type)
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Type | object | A [Type](#type) object indicating each element of the array. |
+The **array** kind indicates an array of elements, each element having the
+inner type.
 
 ### or
 
-The **or** kind describes a union of two or more types. It has the
-following additional fields:
+**Type:** array
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Types | array | An array of [Type](#type) objects. |
+The **or** kind describes a union of two or more types. Each element of
+the array is a [Type](#type) object.
 
 ### optional
 
-The **optional** kind describes a type that can also be nil. It has the
-following additional fields:
+**Type:** [Type](#type)
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Type | object | A [Type](#type) object indicating the underlying type. |
+The **optional** kind describes a type that can also be nil.
 
 ### group
 
-The **group** kind groups the underlying type. It has the following
-additional fields:
+**Type:** [Type](#type)
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Type | object | A [Type](#type) object indicating the underlying type. |
+The **group** kind groups the inner type.
 
 ### struct
 
-The **struct** kind describes a table with a number of named fields. It
-has the following additional fields:
+**Type:** object
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Fields | object | The fields of the struct. Maps a field name to a [Type](#type) object. |
+The **struct** kind describes a table with a number of named fields. Each
+field maps a name to a [Type](#type) object.
 
 ### map
 
+**Type:** object
+
 The **map** kind describes a table where each element maps a key to a
-value. It has the following additional fields:
+value. It has the following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -308,14 +296,15 @@ value. It has the following additional fields:
 
 ### dictionary
 
-The **dictionary** kind describes a table where each element maps a string
-to a value. It has the following additional fields:
+**Type:** [Type](#type)
 
-| Field | Type | Description |
-| --- | --- | --- |
-| Value | object | A [Type](#type) object indicating the type of each value. |
+The **dictionary** kind describes a table where each element maps a string
+to a value. The inner type object indicates the type of each value in the
+map.
 
 ### table
+
+**Type:** object
 
 The **table** kind describes a table with both a map part and a struct
 part. It has the following additional fields:
@@ -328,8 +317,10 @@ part. It has the following additional fields:
 
 ### functions
 
-The **functions** kind describes a function with multiple signatures. It
-has no additional fields.
+**Type:** object
+
+The **functions** kind indicates a function with multiple signatures. It
+has no fields.
 
 ## Operators
 
