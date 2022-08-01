@@ -18,6 +18,9 @@ refLinksNotFoundURL = "/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/404.
 [Author]
   name = "Anaminus"
 
+[outputs]
+  home = ["HTML", "JSON"]
+
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.tableOfContents]
