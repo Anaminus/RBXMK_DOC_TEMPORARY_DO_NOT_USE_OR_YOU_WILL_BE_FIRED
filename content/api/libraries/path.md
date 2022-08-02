@@ -18,6 +18,7 @@ The **path** library provides functions that handle file paths.
 | [clean](#clean) | Function | Cleans up a file path. |
 | [expand](#expand) | Function | Expands predefined file path variables. |
 | [join](#join) | Function | Joins a number of file paths together. |
+| [rel](#rel) | Function | Produces a relative path. |
 | [split](#split) | Function | Splits a file path into its components. |
 
 </div>
@@ -58,6 +59,21 @@ Other variables cause an error to be thrown.
 The **join** function joins each *path* element into a single path,
 separating them using the operating system's path separator. This also cleans up
 the path.
+
+## rel
+
+ `path.rel(basePath: string, targetPath: string): string?`
+
+The **rel** function returns a relative path that is equivalent to
+*targetPath* when joined with *basePath*, such that following
+equivalence is true:
+
+```lua
+path.clean(targetPath) == path.join(basePath, path.rel(basePath, targetPath))
+```
+
+[path.clean](/api/libraries/path#clean) is called on the result. Returns nil
+if *targetPath* cannot be made relative to *basePath*.
 
 ## split
 
