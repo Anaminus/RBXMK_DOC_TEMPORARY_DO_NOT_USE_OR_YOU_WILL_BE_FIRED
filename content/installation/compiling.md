@@ -112,8 +112,16 @@ Then, when `SSLKEYLOGFILE` is set to, say, `/tmp/sslkeys.log`, rbxmk will write
 keys to this file as it makes network requests. Meanwhile, Wireshark will read
 keys from this file, and use them to decrypt the network traffic made by rbxmk.
 
-Because key logging is a security risk, it is forced disabled when the `release`
-build tag is included.
+{{<alert type="warning">}}
+
+If the `SSLKEYLOGFILE` environment variable is defined globally, other programs
+may respect it inadvertently. Make sure to have it enabled only when debugging.
+Or, compile rbxmk with a different variable name.
+
+{{</alert>}}
+
+Because key logging can be a security risk, the `sslkeylog` tag is forced
+disabled when the `release` build tag is included.
 
 ## Language tags
 Support for compilation with alternate languages is available.
