@@ -9,9 +9,8 @@ The **rbxlx** format encodes Instances in the Roblox XML place format.
 
 | Direction | Type | Description |
 | --- | --- | --- |
-| Decode | [DataModel](/api/types/DataModel) | A DataModel instance. |
-| Encode | [DataModel](/api/types/DataModel) | A DataModel instance. |
-| Encode | [Instance](/api/types/Instance) | A single instance, interpreted as a child to a DataModel. |
+| Decode | [Instance](/api/types/Instance) | A DataModel instance. |
+| Encode | [Instance](/api/types/Instance) | A single instance. If not a DataModel, it is interpreted as a child to a DataModel. |
 | Encode | Objects | A list of Instances, interpreted as children to a DataModel. |
 
 # Options

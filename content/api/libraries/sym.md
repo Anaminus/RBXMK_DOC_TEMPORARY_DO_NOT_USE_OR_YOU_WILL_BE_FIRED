@@ -29,7 +29,7 @@ print(instance[sym.IsService]) --> true
 | [AttrConfig](#attrconfig) | Field | Gets the inherited [AttrConfig](/api/types/AttrConfig) of an instance. |
 | [Desc](#desc) | Field | Gets the inherited [descriptor](/api/types/Desc) of an instance. |
 | [IsService](#isservice) | Field | Determines whether an instance is a service. |
-| [Metadata](#metadata) | Field | Gets the metadata of a [DataModel](/api/types/DataModel). |
+| [Metadata](#metadata) | Field | Gets the metadata of a [DataModel](/api/types/Instance). |
 | [Properties](#properties) | Field | Gets the properties of an instance. |
 | [RawAttrConfig](#rawattrconfig) | Field | Accesses the direct [AttrConfig](/api/types/AttrConfig) of an instance. |
 | [RawDesc](#rawdesc) | Field | Accesses the direct [descriptor](/api/types/Desc) of an instance. |
@@ -64,7 +64,7 @@ The **IsService** symbol determines whether an instance is a service.
 
  `sym.Metadata: Symbol [readonly]`
 
-The **Metadata** symbol gets the metadata of a [DataModel](/api/types/DataModel).
+The **Metadata** symbol gets the metadata of a [DataModel](/api/types/Instance).
 
 ## Properties
 

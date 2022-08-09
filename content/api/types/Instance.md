@@ -26,6 +26,7 @@ details on the implementation of Instances.
 | [sym.AttrConfig](#symattrconfig) | Symbol | The AttrConfig used by the instance. |
 | [sym.Desc](#symdesc) | Symbol | The descriptor used by the instance. |
 | [sym.IsService](#symisservice) | Symbol | Whether the instance is a service. |
+| [sym.Metadata](#symmetadata) | Symbol | Gets metadata of the DataModel. |
 | [sym.Properties](#symproperties) | Symbol | All properties of the instance. |
 | [sym.RawAttrConfig](#symrawattrconfig) | Symbol | The direct AttrConfig of the instance. |
 | [sym.RawDesc](#symrawdesc) | Symbol | The direct descriptor of the instance. |
@@ -45,6 +46,7 @@ details on the implementation of Instances.
 | [GetChildren](#getchildren) | Method | Gets the children. |
 | [GetDescendants](#getdescendants) | Method | Gets all descendants. |
 | [GetFullName](#getfullname) | Method | Gets a name according to the ancestors of the instance. |
+| [GetService](#getservice) | Method | Gets a service instance from the tree. |
 | [IsA](#isa) | Method | Gets whether the class inherits from a given class name. |
 | [IsAncestorOf](#isancestorof) | Method | Gets whether the instance is an ancestor. |
 | [IsDescendantOf](#isdescendantof) | Method | Gets whether the instance is an descendant. |
@@ -61,7 +63,7 @@ details on the implementation of Instances.
 
 ## new
 
- `Instance.new(className: string, parent: Instance?, descriptor: (Desc | bool)?): Instance | DataModel`
+ `Instance.new(className: string, parent: Instance?, descriptor: (Desc | bool)?): Instance`
 
 The **new** constructor returns a new Instance of the given class.
 *className* sets the [ClassName](/api/types/Instance#classname)
@@ -71,8 +73,7 @@ If *desc* is specified, then it sets the [sym.Desc](/api/types/Instance#symdesc)
 member. Additionally, new will throw an error if the class does not exist. If no
 descriptor is specified, then any class name will be accepted.
 
-If *className* is "DataModel", then a [DataModel](/api/types/DataModel) value is returned. In this case, new will
-throw an error if *parent* is not nil.
+If *className* is "DataModel", then *parent* must be nil.
 
 # Properties
 
@@ -84,7 +85,9 @@ throw an error if *parent* is not nil.
 
 The **ClassName** property gets or sets the class of the instance.
 
-Unlike in Roblox, ClassName can be modified.
+ClassName can be modified, except when the class is "DataModel". Changing the
+class of an instance has no additional effects; properties are not transformed
+to conform to any descriptors of the class.
 
 ## Name
 
@@ -128,6 +131,16 @@ The **IsService** symbol indicates whether the instance is a service, such
 as Workspace or Lighting. This is used by some formats to determine how to
 encode and decode the instance.
 
+## sym.Metadata
+
+ `Instance[sym.Metadata]: Dictionary`
+
+*This member only exists if the instance is of class DataModel.*
+
+The **Metadata** symbol gets or sets the metadata associated with the
+DataModel. This metadata is used by certain formats (e.g.
+ExplicitAutoJoints).
+
 ## sym.Properties
 
  `Instance[sym.Properties]: Dictionary`
@@ -165,10 +178,9 @@ section.
  `Instance[sym.Reference]: string`
 
 The **Reference** symbol is a string used to refer to the instance from
-within a [DataModel](/api/types/DataModel). Certain formats use this to
-encode a reference to an instance. For example, the RBXMX format will generate
-random UUIDs for its references (e.g.
-"RBX8B658F72923F487FAE2F7437482EF16D").
+within an instance tree. Certain formats use this to encode a reference to an
+instance. For example, the RBXMX format will generate random UUIDs for its
+references (e.g. "RBX8B658F72923F487FAE2F7437482EF16D").
 
 A reference should not be expected to persist when being encoded or
 decoded.
@@ -324,7 +336,22 @@ instance.
  `Instance:GetFullName(): string`
 
 The **GetFullName** method returns the concatenation of the [Name](/api/types/Instance#name) of each ancestor of the instance and the
-instance itself, separated by `.` characters. If an ancestor is a [DataModel](/api/types/DataModel), it is not included.
+instance itself, separated by `.` characters. If an ancestor is a
+DataModel, it is not included.
+
+## GetService
+
+ `Instance:GetService(name: string): Instance`
+
+*This member only exists if the instance is of class DataModel.*
+
+The **GetService** method returns the first child of the DataModel whose
+[ClassName](/api/types/Instance#classname) equals *className*. If no
+such child exists, then a new instance of *className* is created. The [Name](/api/types/Instance#name) of the instance is set to *className*,
+[sym.IsService](/api/types/Instance#symisservice) is set to true, and [Parent](/api/types/Instance#parent) is set to the DataModel.
+
+If the DataModel has a descriptor, then GetService will throw an error if the
+created class's descriptor does not have the "Service" tag set.
 
 ## IsA
 
