@@ -58,8 +58,10 @@ environment variable. To interface with Wireshark, rbxmk can be compiled as
 follows:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>go install -tags <span class=s2>&#34;sslkeylog&#34;</span> -ldflags<span class=o>=</span><span class=s2>&#34;-X main.sslKeyLogFileEnvVar=SSLKEYLOGFILE&#34;</span>
 </span></span></code></pre></div><p>Then, when <code>SSLKEYLOGFILE</code> is set to, say, <code>/tmp/sslkeys.log</code>, rbxmk will write
 keys to this file as it makes network requests. Meanwhile, Wireshark will read
-keys from this file, and use them to decrypt the network traffic made by rbxmk.</p><p>Because key logging is a security risk, it is forced disabled when the <code>release</code>
-build tag is included.</p><h2 id=language-tags>Language tags
+keys from this file, and use them to decrypt the network traffic made by rbxmk.</p><div class='sc-alert sc-alert-warning'>If the <code>SSLKEYLOGFILE</code> environment variable is defined globally, other programs
+may respect it inadvertently. Make sure to have it enabled only when debugging.
+Or, compile rbxmk with a different variable name.</div><p>Because key logging can be a security risk, the <code>sslkeylog</code> tag is forced
+disabled when the <code>release</code> build tag is included.</p><h2 id=language-tags>Language tags
 <a href=#language-tags class=anchor>#</a></h2><p>Support for compilation with alternate languages is available.</p><p>By default, the &ldquo;en-us&rdquo; language is compiled. To compile with a different
 language, the <code>lang_no_default</code> tag must be included disable the default
 language, then a <code>lang_*</code> tag is included to set the desired language.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>go install -tags <span class=s2>&#34;lang_no_default lang_en_us&#34;</span>
