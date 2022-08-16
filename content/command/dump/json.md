@@ -47,7 +47,7 @@ The following top-level fields are specified:
 | Fields | Type | Description |
 | --- | --- | --- |
 | Version | number | Reserved for indicating different versions of the structure. Always 0. |
-| Libraries | array | A list of libraries available in the Lua environment. Each element is a [Library](#library) object. |
+| Libraries | object? | A collection of libraries available in the Lua environment. Maps a library name to a [Library](#library) object. |
 | Types | object? | A collection of globally defined data types. Maps a type name to a [TypeDef](#typedef) object. |
 | Enums | object? | A collection of globally defined enums. Maps an enum name to an [Enum](#enum) object. |
 | Formats | object? | A collection of globally defined formats. Maps a type name to a [Format](#format) object. |
@@ -157,9 +157,8 @@ fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| Name | string | The name of the library. |
-| ImportedAs | string | The name the library is imported under. If empty, then the library is merged into the global environment. |
 | Priority | int | The priority that determines the order in which the library is loaded. Libraries are loaded by ascending priority. |
+| Import | array | A path indicating where the library is merged. Each element is a string representing an element of the path. If empty, the library is merged into the global environment. |
 | Types | object? | A collection of data types defined by the library. Maps a type name to a [TypeDef](#typedef) object. |
 | Enums | object? | A collection of enums defined by the library. Maps an enum name to an [Enum](#enum) object. |
 | Struct | object? | A [Struct](#struct) object that describes the contents of the library. |
