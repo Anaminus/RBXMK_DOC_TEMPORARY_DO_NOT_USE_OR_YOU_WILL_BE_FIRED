@@ -46,6 +46,7 @@ refLinksNotFoundURL = "/RBXMK_DOC_TEMPORARY_DO_NOT_USE_OR_YOU_WILL_BE_FIRED/404.
   globalBanner = false
   # Curent version of the website
   currentVersion = "latest"
+  enforceRefrelLinks = true
   # Url of the latest version of the website
   # latestVersionUrl = "latest"
   # Taxonomies list
