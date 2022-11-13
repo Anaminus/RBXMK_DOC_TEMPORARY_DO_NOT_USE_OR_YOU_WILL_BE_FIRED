@@ -22,6 +22,7 @@ description = "Type reference."
 - [EnumItem](/api/types/EnumItem)
 - [Enums](/api/types/Enums)
 - [Faces](/api/types/Faces)
+- [Font](/api/types/Font)
 - [Instance](/api/types/Instance)
 - [NumberRange](/api/types/NumberRange)
 - [NumberSequence](/api/types/NumberSequence)
