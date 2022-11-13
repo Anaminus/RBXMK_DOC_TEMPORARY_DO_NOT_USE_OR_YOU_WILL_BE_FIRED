@@ -26,6 +26,7 @@ The following value types are encoded and decoded:
 - Color3
 - Vector2
 - Vector3
+- CFrame
 - NumberSequence
 - ColorSequence
 - NumberRange
