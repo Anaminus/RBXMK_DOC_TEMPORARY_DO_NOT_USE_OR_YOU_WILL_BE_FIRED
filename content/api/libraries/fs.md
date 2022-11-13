@@ -41,8 +41,9 @@ file is a table with the following fields:
 | Name | string | The base name of the file. |
 | IsDir | boolean | Whether the file is a directory. |
 
-dir returns nil if the directory does not exist. An error is thrown if a
-problem otherwise occurred while reading the directory.
+dir returns nil if the directory does not exist, or the path does not point
+to a directory. An error is thrown if a problem otherwise occurred while reading
+the directory.
 
 ## mkdir
 
